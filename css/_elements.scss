@@ -3,23 +3,54 @@ html {
 }
 
 body {
-
+background-color: $color-bg;
 }
 
-a {
 
+h1{
+    font-size: 6.4rem;
+    color: $color-white;
 }
-
-h1,
-h2,
-h3 {
-  
+h2{
+    font-size: 5.6rem;
 }
-
+h3{
+    font-size: 4rem;
+}
 header{
-    
+    background-color: $color-aside;
+    height: 11.2rem;
+    width: calc(100% - 24rem);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top:0;
 }
 
-ul{
-   
+
+button{
+    background-color: $color-aside;
+    height: 5.6rem;
+    width: 100%;
+    border: 1px solid $color-light-blue;
+    position: relative;
+    color: $color-light-blue;
+    font-size:2.4rem;
+
+    &:hover{
+        color:$color-hover-blue;
+    }
+}
+
+nav{
+width: 24rem;
+height: 100%;
+background-color: $color-aside;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+overflow-x: hidden;
+padding-top: 20px;
 }
