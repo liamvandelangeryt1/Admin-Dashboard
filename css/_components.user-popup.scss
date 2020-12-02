@@ -22,4 +22,46 @@
         border-radius: 50%;
         border: 0.5rem solid $color-light-blue;
     }
+
+    &__name{
+        color: $color-light-blue;
+        padding-bottom: 0.8rem;
+    }
+
+    &__function{
+        color: $color-light-blue;
+    }
+
+    &__info{
+        margin-top: 2.4rem;
+        font-size: 2.0rem;
+    }
+
+    &__element{
+        margin-bottom: 0.4rem;
+    }
+
+    &__label{
+        width: 10rem;
+        padding: 0.8rem;
+        color: $color-aside;
+        background-color: $color-white;
+    }
+
+    &__input{
+        width: 22rem;
+        border: 0.5rem solid $color-light-blue;
+        padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+        font-size: 1.6rem;
+        background-image:none;
+        background-color:transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        &::placeholder{
+        color: $color-light-blue;
+        }
+
+    }
 }

@@ -11237,4 +11237,56 @@ nav {
   border-radius: 50%;
   border: 0.5rem solid #00A8E1;
 }
+
+.c-user-popup__name {
+  color: #00A8E1;
+  padding-bottom: 0.8rem;
+}
+
+.c-user-popup__function {
+  color: #00A8E1;
+}
+
+.c-user-popup__info {
+  margin-top: 2.4rem;
+  font-size: 2.0rem;
+}
+
+.c-user-popup__element {
+  margin-bottom: 0.4rem;
+}
+
+.c-user-popup__label {
+  width: 10rem;
+  padding: 0.8rem;
+  color: #1A232E;
+  background-color: white;
+}
+
+.c-user-popup__input {
+  width: 22rem;
+  border: 0.5rem solid #00A8E1;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.c-user-popup__input::-webkit-input-placeholder {
+  color: #00A8E1;
+}
+
+.c-user-popup__input:-ms-input-placeholder {
+  color: #00A8E1;
+}
+
+.c-user-popup__input::-ms-input-placeholder {
+  color: #00A8E1;
+}
+
+.c-user-popup__input::placeholder {
+  color: #00A8E1;
+}
 /*# sourceMappingURL=screen.css.map */
