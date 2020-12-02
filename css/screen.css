@@ -11220,22 +11220,28 @@ nav {
   height: 2.1rem;
 }
 
-.c-seriefilm-content {
-  max-width: 366px;
-  max-height: 200px;
+.c-seriefilm {
+  width: 100%;
+  overflow: hidden;
 }
 
-.c-seriefilm-img {
-  width: 366px;
-  height: 200px;
-  border-radius: 6px;
+.c-movie-item {
+  display: block;
 }
 
-.c-seriefilm-text {
-  text-align: center;
+.c-custom-rows {
+  margin-left: 240px;
+  margin-top: 183px;
 }
 
-.c-seriefilm a {
-  text-decoration: none;
+.c-d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -9,23 +9,21 @@ height: 2.1rem;
 }
 
 .c-seriefilm{
-
-    &-content{
-        max-width: 366px;
-        max-height: 200px;
-
-    }
-    &-img{
-        width: 366px;
-        height: 200px;
-        border-radius: 6px;
-    }
-    &-text{
-        text-align: center;
-    }
-
-
+    width: 100%;
+overflow: hidden;
 }
-.c-seriefilm a{
-    text-decoration: none;
+
+.c-movie-item{
+    display: block;
+}
+
+.c-custom-rows{
+margin-left:240px;
+margin-top: 183px;
+}
+
+.c-d{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
