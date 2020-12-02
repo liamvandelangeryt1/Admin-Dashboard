@@ -11164,6 +11164,11 @@ h3 {
   font-size: 4rem;
 }
 
+h4 {
+  font-size: 3rem;
+  color: white;
+}
+
 header {
   background-color: #1A232E;
   height: 11.2rem;
@@ -11213,5 +11218,24 @@ nav {
 .c-btn-icon {
   width: 2.4rem;
   height: 2.1rem;
+}
+
+.c-seriefilm-content {
+  max-width: 366px;
+  max-height: 200px;
+}
+
+.c-seriefilm-img {
+  width: 366px;
+  height: 200px;
+  border-radius: 6px;
+}
+
+.c-seriefilm-text {
+  text-align: center;
+}
+
+.c-seriefilm a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=screen.css.map */

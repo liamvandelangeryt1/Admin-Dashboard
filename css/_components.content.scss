@@ -8,3 +8,24 @@ width: 2.4rem;
 height: 2.1rem;
 }
 
+.c-seriefilm{
+
+    &-content{
+        max-width: 366px;
+        max-height: 200px;
+
+    }
+    &-img{
+        width: 366px;
+        height: 200px;
+        border-radius: 6px;
+    }
+    &-text{
+        text-align: center;
+    }
+
+
+}
+.c-seriefilm a{
+    text-decoration: none;
+}
