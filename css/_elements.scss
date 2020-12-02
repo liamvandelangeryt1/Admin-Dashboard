@@ -35,12 +35,11 @@ button{
     width: 100%;
     border: 1px solid $color-light-blue;
     position: relative;
+    color: $color-light-blue;
+    font-size:2.4rem;
 
     &:hover{
-        
-    }
-    &:click{
-
+        color:$color-hover-blue;
     }
 }
 

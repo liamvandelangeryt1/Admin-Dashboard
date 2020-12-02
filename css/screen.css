@@ -11185,6 +11185,12 @@ button {
   width: 100%;
   border: 1px solid #00A8E1;
   position: relative;
+  color: #00A8E1;
+  font-size: 2.4rem;
+}
+
+button:hover {
+  color: #79B8F3;
 }
 
 nav {
