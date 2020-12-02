@@ -11216,13 +11216,25 @@ nav {
 }
 
 .c-user-popup {
-  position: relative;
-  top: 60rem;
+  position: absolute;
+  top: 62rem;
   left: 26rem;
-  width: 82rem;
-  height: 48rem;
+  width: 80rem;
+  height: 47rem;
   background-color: #1A232E;
   border-radius: 0.6rem;
   z-index: 1;
+  padding: 4.8rem;
+}
+
+.c-user-popup__content {
+  height: 100%;
+}
+
+.c-user-popup__avatar {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: 0.5rem solid #00A8E1;
 }
 /*# sourceMappingURL=screen.css.map */
