@@ -1,0 +1,374 @@
+{"users":[
+    {
+        "firstName": "Lien",
+        "lastName": "Stevens",
+        "title": "Mevr.",
+        "username": "Lienste",
+        "email": "lien.stevens@howest.be",
+        "dateOfBirth": "1984-06-24T15:45:26.625Z",
+        "address":
+        {
+            "street": "Graaf Karel De Goedelaan",
+            "houseNumber": "5",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 254 06 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0478 45 26 12"
+            }
+        ],
+        "created": "2018-05-12T10:40:26.455Z",
+        "status": "active",
+        "lastLogin": "2020-11-24T16:48:36.455Z",
+        "paymentMethod": "Credit Card"
+    },
+    {
+        "firstName": "Angelo",
+        "lastName": "Fallein",
+        "title": "Dhr.",
+        "username": "Angelo",
+        "email": "angelo.fallein@howest.be",
+        "dateOfBirth": "1987-05-12T10:41:06.605Z",
+        "address":
+        {
+            "street": "Sint-Martens-Latemlaan",
+            "houseNumber": "2B",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 154 26 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0474 22 26 12"
+            }
+        ],
+        "created": "2017-07-12T10:40:26.455Z",
+        "status": "active",
+        "lastLogin": "2020-09-24T16:48:36.455Z",
+        "paymentMethod": "Paypal"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Eerst",
+      "title": "Dhr.",
+      "username": "Boberst",
+      "email": "Bob.eerst@howest.be",
+      "dateOfBirth": "1954-06-24T12:40:16.325Z",
+      "address":
+      {
+          "street": "Piet SintPreistraat",
+          "houseNumber": "25",
+          "city": "beverd",
+          "zipCode": "6500",
+          "country": "Belgium"
+      },
+      "phoneNumber":
+      [
+          {
+            "type": "fixed",
+            "number": "056 204 00 07"
+          },
+          {
+            "type": "mobile",
+            "number": "0409 15 96 92"
+          }
+      ],
+      "created": "2008-09-12T10:40:26.455Z",
+      "status": "active",
+      "lastLogin": "2019-11-24T16:38:26.455Z",
+      "paymentMethod": "Credit Card"
+  },
+  {
+    "firstName": "Bart",
+    "lastName": "De Gaver",
+    "title": "Dhr.",
+    "username": "BartGVR",
+    "email": "Bart.DeGaver@gmail.be",
+    "dateOfBirth": "1944-06-24T12:40:27.535Z",
+    "address":
+    {
+        "street": "Apple Peerstraat",
+        "houseNumber": "75",
+        "city": "Sint Amandel",
+        "zipCode": "6505",
+        "country": "Belgium"
+    },
+    "phoneNumber":
+    [
+        {
+          "type": "fixed",
+          "number": "056 204 00 07"
+        },
+        {
+          "type": "mobile",
+          "number": "0400 15 06 62"
+        }
+    ],
+    "created": "2018-05-12T10:40:26.455Z",
+    "status": "active",
+    "lastLogin": "2020-10-24T16:38:26.455Z",
+    "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Leen",
+  "lastName": "Verkeerd",
+  "title": "Mevr.",
+  "username": "LeenVKR",
+  "email": "Leen.Verkeerd@gmail.be",
+  "dateOfBirth": "1994-12-02T12:40:27.535Z",
+  "address":
+  {
+      "street": "Rene De Bakkerstraat",
+      "houseNumber": "175",
+      "city": "beenachter",
+      "zipCode": "6999",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "036 004 90 67"
+      },
+      {
+        "type": "mobile",
+        "number": "0405 55 06 62"
+      }
+  ],
+  "created": "2018-09-22T10:40:26.455Z",
+  "status": "active",
+  "lastLogin": "2020-11-04T16:38:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Geert",
+  "lastName": "Vereerd",
+  "title": "Dhr.",
+  "username": "GeertV",
+  "email": "Geert.Vereerd@gmail.be",
+  "dateOfBirth": "1999-12-02T12:40:27.535Z",
+  "address":
+  {
+      "street": "Steen Straat",
+      "houseNumber": "195",
+      "city": "Verkoerd",
+      "zipCode": "6299",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "036 064 90 67"
+      },
+      {
+        "type": "mobile",
+        "number": "0405 55 66 62"
+      }
+  ],
+  "created": "2011-09-22T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-10-24T16:48:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Gabby",
+  "lastName": "Boven",
+  "title": "Mevr.",
+  "username": "GeertV",
+  "email": "Gabby.Boven@hotmail.be",
+  "dateOfBirth": "1989-02-02T12:40:27.535Z",
+  "address":
+  {
+      "street": "Afvalt Straat",
+      "houseNumber": "5",
+      "city": "Gent",
+      "zipCode": "4299",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 664 99 03"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 00 06 02"
+      }
+  ],
+  "created": "2000-10-02T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-12-24T16:48:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Ben",
+  "lastName": "Boven",
+  "title": "Dhr.",
+  "username": "Bentje",
+  "email": "Ben.Boven@hotmail.be",
+  "dateOfBirth": "1991-02-02T12:40:27.535Z",
+  "address":
+  {
+      "street": "Afvalt Straat",
+      "houseNumber": "5",
+      "city": "Gent",
+      "zipCode": "4299",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 664 99 03"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 00 06 02"
+      }
+  ],
+  "created": "2000-10-02T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-12-24T16:48:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Karin",
+  "lastName": "Janssens",
+  "title": "Mevr.",
+  "username": "Kar",
+  "email": "Kar.1@hotmail.be",
+  "dateOfBirth": "1992-05-05T12:46:27.535Z",
+  "address":
+  {
+      "street": "Beroptop Straat",
+      "houseNumber": "659",
+      "city": "Antwerpen",
+      "zipCode": "2298",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 559 59 99"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 13 13 12"
+      }
+  ],
+  "created": "2015-04-02T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-02-04T16:48:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Kaaren",
+  "lastName": "Janssens",
+  "title": "Mevr.",
+  "username": "Kara",
+  "email": "Kaaren.js@telenetmail.be",
+  "dateOfBirth": "1992-05-05T12:46:27.535Z",
+  "address":
+  {
+      "street": "Beroptop Straat",
+      "houseNumber": "659",
+      "city": "Antwerpen",
+      "zipCode": "2298",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 559 59 99"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 13 13 12"
+      }
+  ],
+  "created": "2015-04-02T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-02-04T16:48:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Fred",
+  "lastName": "Janssens",
+  "title": "Dhr.",
+  "username": "fre",
+  "email": "Fre.js@telenetmail.be",
+  "dateOfBirth": "1992-05-05T12:46:27.535Z",
+  "address":
+  {
+      "street": "Beroptop Straat",
+      "houseNumber": "659",
+      "city": "Antwerpen",
+      "zipCode": "2298",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 559 59 99"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 13 13 12"
+      }
+  ],
+  "created": "2016-07-12T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2020-06-04T16:58:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+{
+  "firstName": "Fred",
+  "lastName": "Van Akker",
+  "title": "Dhr.",
+  "username": "freva",
+  "email": "Fred.Va@hotmail.be",
+  "dateOfBirth": "1999-10-15T12:46:27.535Z",
+  "address":
+  {
+      "street": "Akkergroeg Straat",
+      "houseNumber": "69",
+      "city": "Melsele",
+      "zipCode": "1298",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "032 123 45 99"
+      },
+      {
+        "type": "mobile",
+        "number": "0400 45 90 18"
+      }
+  ],
+  "created": "2017-07-12T09:50:56.455Z",
+  "status": "active",
+  "lastLogin": "2018-06-04T16:58:26.455Z",
+  "paymentMethod": "Credit Card"
+},
+]}
