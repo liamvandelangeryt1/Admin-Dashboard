@@ -98,7 +98,8 @@
         "_bootstrap.override.scss",
         "_components.logo.scss",
         "_components.sidenav.scss",
-        "_components.content.scss"
+        "_components.content.scss",
+        "_components.stats.scss"
     ],
     "names": [],
     "file": "screen.css"
