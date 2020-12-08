@@ -1,11 +1,11 @@
 .c-stats {
-  position: relative;
-  
   height: 100%;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-evenly;
+  padding-top: $padding-header;
+  padding-left: $padding-nav;
 }
 
 .c-stats__item {

@@ -33,7 +33,7 @@ header{
     background-color: $color-aside;
     height: 11.2rem;
     width: calc(100% - 24rem);
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     right: 0;
