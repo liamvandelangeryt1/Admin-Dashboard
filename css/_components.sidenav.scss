@@ -1,12 +1,14 @@
 .c-sidenav{
+    z-index: 1000;
    ul { 
     padding-inline-start: 0;  
     display: flex; 
     flex-direction: column;
     justify-content: center;
     li {
+        padding-left:24px;
         
-        text-align: center;
+        text-align: left;
     width:100%;  
     display: block;
     background-color: $color-aside-normal;
@@ -15,6 +17,17 @@
     margin-top:5px;
     font-size: 2.4rem;
     color:white;
+    &:hover{
+        background-color: $color-bg;
+    }
+
+    a:hover{
+       
+        text-decoration: none;
+        color:white;
+
+    }
+
    }}
     box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
 

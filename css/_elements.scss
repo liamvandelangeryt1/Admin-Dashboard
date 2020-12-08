@@ -6,6 +6,14 @@ body {
 background-color: $color-bg;
 }
 
+a{
+    color: inherit;
+    :hover{
+        text-decoration: none;
+        color: inherit;
+        
+    }
+}
 
 h1{
     font-size: 6.4rem;
@@ -20,7 +28,7 @@ h3{
 h4{
     font-size: 3rem;
     color: $color-white;
-}
+}                                                                       
 header{
     background-color: $color-aside;
     height: 11.2rem;
@@ -37,15 +45,23 @@ header{
 
 button{
     background-color: $color-aside;
-    height: 5.6rem;
+    height:100%;
     width: 100%;
     border: 3px solid $color-light-blue;
     position: relative;
     color: $color-light-blue;
-    font-size:2.4rem;
-    
+    font-size:2rem;
+    align-content: center;
+        
     &:hover{
         color:$color-hover-blue;
+        border-color: $color-hover-blue;
+        fill:$color-hover-blue;
+      
+    }
+
+    > a{
+        margin-top:1rem;
     }
 }
 
