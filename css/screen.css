@@ -10239,4 +10239,66 @@ nav {
   justify-content: space-evenly;
   margin-left: 24rem;
 }
+
+.c-user-popup {
+  position: absolute;
+  top: 62rem;
+  left: 26rem;
+  width: 80rem;
+  height: 47rem;
+  background-color: #1A232E;
+  border-radius: 0.6rem;
+  z-index: 1;
+  padding: 4.8rem;
+}
+
+.c-user-popup__content {
+  height: 100%;
+}
+
+.c-user-popup__avatar {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  border: 0.5rem solid #00A8E1;
+}
+
+.c-user-popup__name {
+  color: #00A8E1;
+  padding-bottom: 0.8rem;
+}
+
+.c-user-popup__function {
+  color: #00A8E1;
+}
+
+.c-user-popup__info {
+  margin-top: 2.4rem;
+  font-size: 2rem;
+}
+
+.c-user-popup__element {
+  margin-bottom: 0.4rem;
+}
+
+.c-user-popup__label {
+  width: 10rem;
+  padding: 0.8rem;
+  color: #1A232E;
+  background-color: white;
+}
+
+.c-user-popup__input {
+  width: 22rem;
+  border: 0.5rem solid #00A8E1;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c-user-popup__input::placeholder {
+  color: #00A8E1;
+}
 /*# sourceMappingURL=screen.css.map */

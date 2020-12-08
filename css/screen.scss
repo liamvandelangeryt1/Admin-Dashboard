@@ -1,18 +1,17 @@
-@import 'settings';
+@import "settings";
 
 @import "generic.normalize";
 @import "../bootstrap-4.5.2/scss/bootstrap";
-@import url('');
+@import url("");
 
-@import 'elements';
+@import "elements";
 
-@import 'objects';
+@import "objects";
 
-@import 'bootstrap.override';
+@import "bootstrap.override";
 
-@import 'components.logo';
-@import 'components.sidenav';
-@import 'components.content';
-@import 'components.stats';
-
-
+@import "components.logo";
+@import "components.sidenav";
+@import "components.content";
+@import "components.stats";
+@import "components.user-popup";
