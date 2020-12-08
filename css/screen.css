@@ -11164,6 +11164,11 @@ h3 {
   font-size: 4rem;
 }
 
+h4 {
+  font-size: 3rem;
+  color: white;
+}
+
 header {
   background-color: #1A232E;
   height: 11.2rem;
@@ -11256,5 +11261,30 @@ nav {
 .c-btn-icon {
   width: 2.4rem;
   height: 2.1rem;
+}
+
+.c-seriefilm {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c-movie-item {
+  display: block;
+}
+
+.c-custom-rows {
+  margin-left: 240px;
+  margin-top: 183px;
+}
+
+.c-d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=screen.css.map */
