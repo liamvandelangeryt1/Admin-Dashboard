@@ -10224,6 +10224,11 @@ nav {
   background-color: white;
 }
 
+.c-statsbot__item--svg {
+  width: 80%;
+  padding-left: 20px;
+}
+
 .c-statsbot__text {
   padding-left: 20px;
   padding-top: 20px;
