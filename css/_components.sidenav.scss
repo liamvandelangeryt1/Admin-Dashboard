@@ -1,3 +1,36 @@
 .c-sidenav{
+   ul { 
+    padding-inline-start: 0;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    li {
+        
+        text-align: center;
+    width:100%;  
+    display: block;
+    background-color: $color-aside-normal;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:5px;
+    font-size: 2.4rem;
+    color:white;
+   }}
     box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+
 }
+
+#active{background-color: $color-bg;}
+
+
+nav{
+    width: 24rem;
+    height: 100%;
+    background-color: $color-aside;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
