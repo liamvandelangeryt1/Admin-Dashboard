@@ -10025,7 +10025,7 @@ header {
   background-color: #1A232E;
   height: 11.2rem;
   width: calc(100% - 24rem);
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   right: 0;
@@ -10042,8 +10042,7 @@ button {
   position: relative;
   color: #00A8E1;
   font-size: 2rem;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 button:hover {
@@ -10079,8 +10078,7 @@ button > a {
 
 .c-sidenav {
   z-index: 1000;
-  -webkit-box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .c-sidenav ul {
@@ -10158,18 +10156,87 @@ nav {
   flex-wrap: wrap;
 }
 
-.c-stats {
-  position: relative;
+.c-statstop {
   height: 100%;
   width: 100%;
-  background-color: white;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: calc(11.2rem + 67px);
 }
 
-.c-stats__item {
-  background-color: black;
+.c-statstop__item {
+  background-color: white;
   width: 374.11px;
   height: 216.31px;
+  border-radius: 4px 4px 0px 0px;
+  padding-bottom: 60px;
+}
+
+.c-statstop__item--svg1 {
+  position: relative;
+  top: -56px;
+}
+
+.c-statstop__item--svg2 {
+  position: relative;
+  top: -14px;
+}
+
+.c-statstop__item--svg3 {
+  position: relative;
+  top: -17px;
+}
+
+.c-statstop__text {
+  padding-left: 22px;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-statstop__text--tit1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #818181;
+}
+
+.c-statstop__text--tit2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+}
+
+.c-statsbot__item {
+  margin-top: 67px;
+  width: 1186px;
+  height: 533px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: white;
+}
+
+.c-statsbot__item--left {
+  margin-top: 67px;
+  width: 375px;
+  height: 533px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: white;
+}
+
+.c-statsbot__text {
+  padding-left: 20px;
+  padding-top: 20px;
+  color: black;
+  font-size: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.c-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 24rem;
 }
 /*# sourceMappingURL=screen.css.map */
