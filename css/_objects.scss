@@ -1,3 +1,20 @@
 .c-logo{
     padding: 50px;
 }
+
+.c-icon{
+    width: 32px;
+    height:32px;
+    &-header{
+        display: inline;
+        width: 22px;
+        height: 22px;
+        fill:$color-light-blue;
+        padding-bottom: 0.5rem;
+        &:hover{
+            fill: $color-hover-blue;
+        }
+      
+    }
+}
+

@@ -9994,6 +9994,15 @@ body {
   background-color: #0F171E;
 }
 
+a {
+  color: inherit;
+}
+
+a :hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-size: 6.4rem;
   color: white;
@@ -10027,24 +10036,51 @@ header {
 
 button {
   background-color: #1A232E;
-  height: 5.6rem;
+  height: 100%;
   width: 100%;
   border: 3px solid #00A8E1;
   position: relative;
   color: #00A8E1;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 button:hover {
   color: #79B8F3;
+  border-color: #79B8F3;
+  fill: #79B8F3;
+}
+
+button > a {
+  margin-top: 1rem;
 }
 
 .c-logo {
   padding: 50px;
 }
 
+.c-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.c-icon-header {
+  display: inline;
+  width: 22px;
+  height: 22px;
+  fill: #00A8E1;
+  padding-bottom: 0.5rem;
+}
+
+.c-icon-header:hover {
+  fill: #79B8F3;
+}
+
 .c-sidenav {
-  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .c-sidenav ul {
@@ -10055,7 +10091,8 @@ button:hover {
 }
 
 .c-sidenav ul li {
-  text-align: center;
+  padding-left: 24px;
+  text-align: left;
   width: 100%;
   display: block;
   background-color: #00ADE7;
@@ -10063,6 +10100,15 @@ button:hover {
   padding-bottom: 20px;
   margin-top: 5px;
   font-size: 2.4rem;
+  color: white;
+}
+
+.c-sidenav ul li:hover {
+  background-color: #0F171E;
+}
+
+.c-sidenav ul li a:hover {
+  text-decoration: none;
   color: white;
 }
 
