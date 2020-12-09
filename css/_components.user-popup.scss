@@ -1,10 +1,12 @@
 .c-user-popup {
-  position: absolute;
+  display: none;
+  position: fixed;
+  z-index: 10;
   top: 62rem;
   left: 26rem;
 
   width: 80rem;
-  height: 47rem;
+  height: 42rem;
   background-color: $color-aside;
   border-radius: $border-radius;
   z-index: 1;
@@ -15,16 +17,27 @@
     height: 100%;
   }
 
+  &__close{
+    color: #00A8E1;
+    z-index: 11;
+    position: relative;
+    left: 19rem;
+    font-size: 32px;
+    top: -5rem;
+    cursor: pointer;
+  }
+
   &__avatar {
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     border: 0.5rem solid $color-light-blue;
+    align-items: center;
   }
 
   &__name {
     color: $color-light-blue;
-    padding-bottom: 0.8rem;
+    padding-bottom: 2.4rem;
   }
 
   &__function {
@@ -32,7 +45,8 @@
   }
 
   &__info {
-    margin-top: 2.4rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.4rem;
     font-size: 2rem;
   }
 
@@ -41,14 +55,15 @@
   }
 
   &__label {
-    width: 10rem;
+    width: 12rem;
     padding: 0.8rem;
     color: $color-aside;
-    background-color: $color-white;
+    background-color: $color-light-blue;
+    font-weight: $font-medium;
   }
 
   &__input {
-    width: 22rem;
+    width: 64%;
     border: 0.5rem solid $color-light-blue;
     padding: 0.8rem 0.8rem 0.4rem 0.8rem;
     font-size: 1.6rem;
@@ -62,4 +77,8 @@
       color: $color-light-blue;
     }
   }
+
+  // &__button{
+  //   mar
+  // }
 }

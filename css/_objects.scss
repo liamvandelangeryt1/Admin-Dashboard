@@ -1,5 +1,5 @@
 .c-logo{
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 .c-icon{
@@ -16,5 +16,31 @@
         }
       
     }
+  
+     
+    
 }
 
+.c-admin{
+    margin-top: 15rem;
+    padding-left: 24px;
+    &-icon{   width: 32px;
+        height: 32px;
+        display: inline;
+        fill: $white;
+    &-logout{
+        
+        width: 30px;
+        height: 30px;
+        fill:#4B935B;
+    }}
+        &-img{
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            border-color: $color-light-blue;
+            border-image-width: 5px;
+            border-style: solid;
+            margin-bottom: 2.4rem;
+        }
+}
