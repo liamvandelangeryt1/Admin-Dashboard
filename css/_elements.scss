@@ -3,33 +3,43 @@ html {
 }
 
 body {
-background-color: $color-bg;
+    background-color: $color-bg;
 }
 
-a{
+a {
     color: inherit;
-    :hover{
+
+    :hover {
         text-decoration: none;
         color: inherit;
-        
+
     }
 }
 
-h1{
+h1 {
     font-size: 6.4rem;
     color: $color-white;
 }
-h2{
+
+h2 {
     font-size: 5.6rem;
 }
-h3{
+
+h3 {
     font-size: 4rem;
 }
-h4{
+
+h4 {
     font-size: 3rem;
     color: $color-white;
-}                                                                       
-header{
+}
+
+h5 {
+    font-size: 2rem;
+    color: $color-white;
+}
+
+header {
     background-color: $color-aside;
     height: 11.2rem;
     width: calc(100% - 24rem);
@@ -37,31 +47,30 @@ header{
     display: flex;
     align-items: center;
     right: 0;
-    top:0;
+    top: 0;
     padding-left: 40px;
-    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 
-button{
+button {
     background-color: $color-aside;
-    height:100%;
+    height: 100%;
     width: 100%;
     border: 3px solid $color-light-blue;
     position: relative;
     color: $color-light-blue;
-    font-size:2rem;
+    font-size: 2rem;
     align-content: center;
-        
-    &:hover{
-        color:$color-hover-blue;
+
+    &:hover {
+        color: $color-hover-blue;
         border-color: $color-hover-blue;
-        fill:$color-hover-blue;
-      
+        fill: $color-hover-blue;
+
     }
 
-    > a{
-        margin-top:1rem;
+    >a {
+        margin-top: 1rem;
     }
 }
-
