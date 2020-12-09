@@ -15,9 +15,12 @@
         padding-top:20px;
         padding-bottom: 20px;
         margin-top:5px;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: $font-bold;
         color:white;
+    a{
+        padding-left: 0.4rem;
+    }    
     &:hover{
         background-color: $color-bg;
     }

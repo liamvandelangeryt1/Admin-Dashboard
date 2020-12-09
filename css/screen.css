@@ -11316,9 +11316,13 @@ button > a {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: white;
+}
+
+.c-sidenav ul li a {
+  padding-left: 0.4rem;
 }
 
 .c-sidenav ul li:hover {
