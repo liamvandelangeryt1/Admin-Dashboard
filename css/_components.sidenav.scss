@@ -5,21 +5,23 @@
     display: flex; 
     flex-direction: column;
     justify-content: center;
+
     li {
         padding-left:24px;
-        
         text-align: left;
-    width:100%;  
-    display: block;
-    background-color: $color-aside-normal;
-    padding-top:20px;
-    padding-bottom: 20px;
-    margin-top:5px;
-    font-size: 2.4rem;
-    color:white;
+        width:100%;  
+        display: block;
+        background-color: $color-aside-normal;
+        padding-top:20px;
+        padding-bottom: 20px;
+        margin-top:5px;
+        font-size: 2.4rem;
+        font-weight: $font-bold;
+        color:white;
     &:hover{
         background-color: $color-bg;
     }
+
 
     a:hover{
        
