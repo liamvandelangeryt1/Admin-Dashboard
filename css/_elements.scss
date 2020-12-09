@@ -3,13 +3,15 @@ html {
 }
 
 body {
-    background-color: $color-bg;
+background-color: $color-bg;
+font-family: $font-amazon !important;
 }
 
 a {
     color: inherit;
-
-    :hover {
+    font-weight: $font-bold !important;
+    
+    :hover{
         text-decoration: none;
         color: inherit;
 
@@ -19,6 +21,7 @@ a {
 h1 {
     font-size: 6.4rem;
     color: $color-white;
+    font-weight: $font-thin !important;
 }
 
 h2 {
@@ -32,6 +35,7 @@ h3 {
 h4 {
     font-size: 3rem;
     color: $color-white;
+
 }
 
 h7 {
@@ -39,7 +43,22 @@ h7 {
     color: $color-white;
 }
 
-header {
+         
+h5{
+    font-size:4rem;
+    color: $color-light-blue;
+    margin-bottom: 1.8rem;
+    font-weight: $font-ultralight !important;
+}
+h6{ 
+    font-size:2.4rem;
+    color: $white;
+    display: inline;
+    margin-bottom:2.1rem ;
+    font-weight: $font-ultralight; 
+}     
+
+header{
     background-color: $color-aside;
     height: 11.2rem;
     width: calc(100% - 24rem);
@@ -58,9 +77,9 @@ button {
     height: 100%;
     width: 100%;
     border: 3px solid $color-light-blue;
-    position: relative;
+
     color: $color-light-blue;
-    font-size: 2rem;
+    font-size:1.8rem;
     align-content: center;
 
     &:hover {

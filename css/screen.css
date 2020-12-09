@@ -1,3 +1,4 @@
+/* look like amazon */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -11149,10 +11150,12 @@ html {
 
 body {
   background-color: #0F171E;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 a {
   color: inherit;
+  font-weight: 700 !important;
 }
 
 a :hover {
@@ -11163,6 +11166,7 @@ a :hover {
 h1 {
   font-size: 6.4rem;
   color: white;
+  font-weight: 100 !important;
 }
 
 h2 {
@@ -11178,9 +11182,25 @@ h4 {
   color: white;
 }
 
+
 h7 {
   font-size: 2rem;
   color: white;
+}
+h5 {
+  font-size: 4rem;
+  color: #00A8E1;
+  margin-bottom: 1.8rem;
+  font-weight: 200 !important;
+}
+
+h6 {
+  font-size: 2.4rem;
+  color: #fff;
+  display: inline;
+  margin-bottom: 2.1rem;
+  font-weight: 200;
+
 }
 
 header {
@@ -11206,9 +11226,10 @@ button {
   height: 100%;
   width: 100%;
   border: 3px solid #00A8E1;
-  position: relative;
   color: #00A8E1;
-  font-size: 2rem;
+
+  font-size: 1.8rem;
+
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -11224,7 +11245,7 @@ button > a {
 }
 
 .c-logo {
-  padding: 50px;
+  padding: 30px 50px;
 }
 
 .c-icon {
@@ -11242,6 +11263,34 @@ button > a {
 
 .c-icon-header:hover {
   fill: #79B8F3;
+}
+
+.c-admin {
+  margin-top: 15rem;
+  padding-left: 24px;
+}
+
+.c-admin-icon {
+  width: 32px;
+  height: 32px;
+  display: inline;
+  fill: #fff;
+}
+
+.c-admin-icon-logout {
+  width: 30px;
+  height: 30px;
+  fill: #4B935B;
+}
+
+.c-admin-img {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  border-color: #00A8E1;
+  border-image-width: 5px;
+  border-style: solid;
+  margin-bottom: 2.4rem;
 }
 
 .c-sidenav {
@@ -11274,8 +11323,13 @@ button > a {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: white;
+}
+
+.c-sidenav ul li a {
+  padding-left: 0.4rem;
 }
 
 .c-sidenav ul li:hover {
@@ -11341,6 +11395,8 @@ nav {
 .c-custom-rows2 {
   margin-left: 240px;
   min-height: 106px;
+
+.c-d {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11504,12 +11560,20 @@ nav {
   margin-left: 24rem;
 }
 
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
 .c-user-popup {
-  position: absolute;
+  display: none;
+  position: fixed;
+  z-index: 10;
   top: 62rem;
   left: 26rem;
   width: 80rem;
-  height: 47rem;
+  height: 42rem;
   background-color: #1A232E;
   border-radius: 0.6rem;
   z-index: 1;
@@ -11520,16 +11584,29 @@ nav {
   height: 100%;
 }
 
+.c-user-popup__close {
+  color: #00A8E1;
+  z-index: 11;
+  position: relative;
+  left: 19rem;
+  font-size: 32px;
+  top: -5rem;
+  cursor: pointer;
+}
+
 .c-user-popup__avatar {
-  width: 16rem;
-  height: 16rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   border: 0.5rem solid #00A8E1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-user-popup__name {
   color: #00A8E1;
-  padding-bottom: 0.8rem;
+  padding-bottom: 2.4rem;
 }
 
 .c-user-popup__function {
@@ -11537,7 +11614,8 @@ nav {
 }
 
 .c-user-popup__info {
-  margin-top: 2.4rem;
+  margin-top: 2.2rem;
+  margin-bottom: 2.4rem;
   font-size: 2rem;
 }
 
@@ -11546,14 +11624,15 @@ nav {
 }
 
 .c-user-popup__label {
-  width: 10rem;
+  width: 12rem;
   padding: 0.8rem;
   color: #1A232E;
-  background-color: white;
+  background-color: #00A8E1;
+  font-weight: 500;
 }
 
 .c-user-popup__input {
-  width: 22rem;
+  width: 64%;
   border: 0.5rem solid #00A8E1;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   font-size: 1.6rem;
