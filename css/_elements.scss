@@ -4,10 +4,13 @@ html {
 
 body {
 background-color: $color-bg;
+font-family: $font-amazon !important;
 }
 
 a{
     color: inherit;
+    font-weight: $font-bold !important;
+    
     :hover{
         text-decoration: none;
         color: inherit;
@@ -18,6 +21,7 @@ a{
 h1{
     font-size: 6.4rem;
     color: $color-white;
+    font-weight: $font-thin !important;
 }
 h2{
     font-size: 5.6rem;
@@ -33,11 +37,16 @@ h5{
     font-size:4rem;
     color: $color-light-blue;
     margin-bottom: 1.8rem;
+    font-weight: $font-ultralight !important;
 }
-h6{ font-size:2.4rem;
+h6{ 
+    font-size:2.4rem;
     color: $white;
-display: inline;
-margin-bottom:2.1rem ; }                                                           
+    display: inline;
+    margin-bottom:2.1rem ;
+    font-weight: $font-ultralight; 
+}     
+
 header{
     background-color: $color-aside;
     height: 11.2rem;

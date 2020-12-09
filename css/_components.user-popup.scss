@@ -55,14 +55,15 @@
   }
 
   &__label {
-    width: 10rem;
+    width: 12rem;
     padding: 0.8rem;
     color: $color-aside;
     background-color: $color-light-blue;
+    font-weight: $font-medium;
   }
 
   &__input {
-    width: 70%;
+    width: 64%;
     border: 0.5rem solid $color-light-blue;
     padding: 0.8rem 0.8rem 0.4rem 0.8rem;
     font-size: 1.6rem;

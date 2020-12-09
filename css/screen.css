@@ -1,3 +1,4 @@
+/* look like amazon */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -11149,10 +11150,12 @@ html {
 
 body {
   background-color: #0F171E;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 a {
   color: inherit;
+  font-weight: 700 !important;
 }
 
 a :hover {
@@ -11163,6 +11166,7 @@ a :hover {
 h1 {
   font-size: 6.4rem;
   color: white;
+  font-weight: 100 !important;
 }
 
 h2 {
@@ -11182,6 +11186,7 @@ h5 {
   font-size: 4rem;
   color: #00A8E1;
   margin-bottom: 1.8rem;
+  font-weight: 200 !important;
 }
 
 h6 {
@@ -11189,6 +11194,7 @@ h6 {
   color: #fff;
   display: inline;
   margin-bottom: 2.1rem;
+  font-weight: 200;
 }
 
 header {
@@ -11309,8 +11315,13 @@ button > a {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: white;
+}
+
+.c-sidenav ul li a {
+  padding-left: 0.4rem;
 }
 
 .c-sidenav ul li:hover {
@@ -11538,14 +11549,15 @@ nav {
 }
 
 .c-user-popup__label {
-  width: 10rem;
+  width: 12rem;
   padding: 0.8rem;
   color: #1A232E;
   background-color: #00A8E1;
+  font-weight: 500;
 }
 
 .c-user-popup__input {
-  width: 70%;
+  width: 64%;
   border: 0.5rem solid #00A8E1;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   font-size: 1.6rem;
