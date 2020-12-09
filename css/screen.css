@@ -10240,6 +10240,12 @@ nav {
   margin-left: 24rem;
 }
 
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
 .c-user-popup {
   position: absolute;
   top: 62rem;
