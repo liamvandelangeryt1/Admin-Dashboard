@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/screen.css" />
+    <script src="modal.js"></script>
   </head>
   <body>
     <header>
@@ -56,24 +57,27 @@
       </ul>
     </nav>
     <main>
-      <div class="c-user-popup">
+
+      <div id="j-user-popup" class="c-user-popup ">
+       
         <div class="row">
+          <div class="col-6">
+              <!-- je kan het hier dynamisch maken -->
+              <h3 class="c-user-popup__name">Bob Dien</h3>
+              <h4 class="c-user-popup__function">Administrator</h4>
+          </div>
           <!-- HIER MOET AFBEELDING-->
-          <div class="col-lg-6">
-            <img
+          <div class="col-6 ">
+              <img
               class="c-user-popup__avatar"
-              src="../2019-wpl2-designsystem-JacquemainJulien/src/images/image_steve.jpg"
+              src="../Admin-Dashboard/img/user/user_profile_picture.jpg"
               alt="Picture of user"
             />
-          </div>
-          <div class="col-lg-6">
-            <!-- je kan het hier dynamisch maken -->
-            <h3 class="c-user-popup__name">Bob Dien</h3>
-            <h4 class="c-user-popup__function">Administrator</h4>
+           <span class="c-user-popup__close">&times;</span>
           </div>
         </div>
         <div class="row c-user-popup__info">
-          <div class="col-lg-6">
+          <div class="col-6">
             <div class="c-user-popup__element">
               <label class="c-user-popup__label" for="c_username"
                 >Username</label
@@ -99,7 +103,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-6">
             <div class="c-user-popup__element">
               <label class="c-user-popup__label" for="c_email">E-mail</label
               ><input
@@ -124,7 +128,19 @@
             </div>
           </div>
         </div>
+        <div class="row justify-content-around">
+          <button class="col-4">
+          <a>MAKE ACCOUNT</a>
+          <button class="col-3">
+          <a>EDIT</a>
+          <button class="col-3">
+          <a>LOG OUT</a>
+        </button>
+        </div>
       </div>
+
+      <!-- Trigger/Open The Modal -->
+      <button id="btn-user-popup">Open Modal</button>  
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
