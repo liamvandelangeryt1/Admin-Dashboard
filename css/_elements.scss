@@ -28,7 +28,16 @@ h3{
 h4{
     font-size: 3rem;
     color: $color-white;
-}                                                                       
+}            
+h5{
+    font-size:4rem;
+    color: $color-light-blue;
+    margin-bottom: 1.8rem;
+}
+h6{ font-size:2.4rem;
+    color: $white;
+display: inline;
+margin-bottom:2.1rem ; }                                                           
 header{
     background-color: $color-aside;
     height: 11.2rem;
