@@ -30,9 +30,10 @@ const verwerkenData = function(jsonObject) {
 
   const object = jsonObject;
 
-  for (let step = 0; step < 3; step++) {
+  for (let step = 0; step < 4; step++) {
     var graph = object.Graphs[step]
-    var Color = object.Color[step]
+    var BackgroundColor = object.BackgroundColor[step]
+    var BorderColor = object.BorderColor[step]
     console.log(graph)
      
   var ctx = document.getElementById(`myChart${step}`).getContext('2d');
@@ -44,16 +45,9 @@ const verwerkenData = function(jsonObject) {
             label: '# of Votes',
             data: graph,
             pointRadius: 0,
-            backgroundColor: Color,
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                // 'rgba(54, 162, 235, 1)',
-                // 'rgba(255, 206, 86, 1)',
-                // 'rgba(75, 192, 192, 1)',
-                // 'rgba(153, 102, 255, 1)',
-                // 'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
+            backgroundColor: BackgroundColor,
+            borderColor: BorderColor,
+            borderWidth: 1.4
         }]
     },
     options: {
