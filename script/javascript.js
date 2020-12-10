@@ -1,134 +1,93 @@
-// d3.json(`json/users.json`, function(error, data) {
-var jsons = ["data", "data", "data", "data", "data"];
-
-
-
-// set the dimensions and margins of the graph
-var margin = {top: 20, right: 20, bottom: 30, left: 50},
-width = 960 - margin.left - margin.right,
-height = 500 - margin.top - margin.bottom;
-
-
-// parse the date / time
-var parseTime = d3.timeParse("%Y");
-
-// set the ranges
-var x = d3.scaleTime().range([0, width]);
-var y = d3.scaleLinear().range([height, 0]);
-
-
-// define the line
-var valueline = d3.line()
-.x(function(d) { return x(d.Date); })
-.y(function(d) { return y(d.Imports); });
-
-
-// define the line
-var valueline2 = d3.line()
-.x(function(d) { return x(d.Date); })
-.y(function(d) { return y(d.Exports); });
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-for (let step = 0; step < 2; step++) {
-
-
-// append the svg obgect to the body of the page
-// appends a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
-
-
-
-
-
-var svg = d3.select("body").append("svg")
-
-.attr("class", `set${step}`)
-.attr("width", width + margin.left + margin.right)
-.attr("height", height + margin.top + margin.bottom)
-.append("g")
-.attr("transform",
-      "translate(" + margin.left + "," + margin.top + ")");
-
-
-      d3.json(`json/data.json`, function(error, data) {
-        if (error) throw error;
-              
-       // trigger render
-       draw(data, "Afghanistan");
-       
-       
-      
-        }); 
-
-
-        function draw(data, country) {
-
-
-          var data = data[country];
-          
-          // format the data
-          data.forEach(function(d) {
-            d.Date = parseTime(d.Date);
-            d.Imports = +d.Imports;
-            d.Exports = +d.Exports;
-          });
-          
-          // sort years ascending
-          data.sort(function(a, b){
-          return a["Date"]-b["Date"];
-          })
-          
-          // Scale the range of the data
-          x.domain(d3.extent(data, function(d) { return d.Date; }));
-          y.domain([0, d3.max(data, function(d) {
-            return Math.max(d.Imports, d.Exports); })]);
-          
-          // Add the valueline path.
-          svg.append("path")
-            .data([data])
-            .attr("class", "line")
-            .attr("d", valueline);
-          // Add the valueline path.
-          svg.append("path")
-            .data([data])
-            .attr("class", "line")
-            .attr("d", valueline2);  
-          // Add the X Axis
-          svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
-          
-          // Add the Y Axis
-          svg.append("g")
-            .call(d3.axisLeft(y));
-          }
-
-
+const laadJsonData = function() {
+  //ophalen interne JSON file
+fetch('./json/data.json')
+  .then(function(response) {
+    //antwoord van de server nakijken op het verzoek
+    if (!response.ok) {
+      //antwoord is niet ok. error wordt geworpen
+      throw Error(`Probleem bij de fetch(). Status Code: ${response.status}`);
+    } else {
+      //antwoord is ok
+      console.info('Er is een response teruggekomen van de server');
+      return response.json();
+    }
+  })
+  .then(function(jsonObject) {
+    //functie uitgevoerd en json maken
+    console.info('json object is aangemaakt');
+    verwerkenData(jsonObject)
     
-}
+    
+  })
+  //als uitvoeren op een fout loopt
+  .catch(function(error) {
+    console.error(`fout bij verwerken json ${error}`);
+  });
+};
 
 
+const verwerkenData = function(jsonObject) {
+
+  const object = jsonObject;
+
+  for (let step = 0; step < 3; step++) {
+    var graph = object.Graphs[step]
+    var Color = object.Color[step]
+    console.log(graph)
+     
+  var ctx = document.getElementById(`myChart${step}`).getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: graph,
+            pointRadius: 0,
+            backgroundColor: Color,
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                // 'rgba(54, 162, 235, 1)',
+                // 'rgba(255, 206, 86, 1)',
+                // 'rgba(75, 192, 192, 1)',
+                // 'rgba(153, 102, 255, 1)',
+                // 'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+      legend: {
+        display: false //This will do the task
+     },
+     maintainAspectRatio: false,
+     
+      scales: {
+        
+           xAxes: [{
+              gridLines: {
+                 display: false
+              },
+              ticks: {
+                display: false
+            }
+           }],
+           yAxes: [{
+              gridLines: {
+                 display: false
+              },
+              ticks: {
+                display: false
+            }
+           }]
+      }
+   }
+});
+}}
 
 
-
-
-
-
-
-// Get the data
-  
-
-  // ${jsons[step]}
+//deze regels worden eerst uitgevoerd, alles hangt start vanaf hier.
+document.addEventListener('DOMContentLoaded', function() {
+  console.info('DOM geladen');
+  laadJsonData();
+});

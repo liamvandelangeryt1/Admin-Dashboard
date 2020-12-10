@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Lettertype die lijkt op het font Amazon -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
   </head>
   <body>
     <header class="c-headnav">
@@ -157,12 +159,10 @@
             <span class="c-statstop__text--tit2">3.067.763</span>
             
           </div>
-          <svg class="c-statstop__item--svg1" viewBox="0 0 529.035 251.821">
-            <g id="Group_15" data-name="Group 15" transform="translate(-176 -376.849)">
-              <path id="Path_1" data-name="Path 1" d="M83,248.776l59.5-19.53h49.161L221.81,182l36.108,47.247,36.77-15.711,17.506,42.04,58.768-128.252,82.555-20.453,49.69,64.88,7.485,98.454L567,221.97l20.207,26.806h24.826V356.67H83Z" transform="translate(93 272)" fill="rgba(144,152,250,0.6)"/>
-              <path id="Path_2" data-name="Path 2" d="M702.019,522.27H678.894l-20.142-27.808L602.8,542.555l-8.609-101.1L544.73,379.1l-80.882,19.841L404.36,528.113l-17.922-42.174-36.684,15.62-36.027-46.41-29.678,46.41H234.864l-57.52,20.235-1.045.391-.224.084h-3.09" transform="translate(3.016)" fill="none" stroke="#9098fa" stroke-width="4"/>
-            </g>
-          </svg>
+          <div class="chart-container">
+            <canvas id="myChart0" width="400" height="400"></canvas>
+        </div>
+          
           
         </div>
         <div class="c-statstop__item">
@@ -305,7 +305,7 @@
       </div>
     </div>
 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+  
     <script src="script/javascript.js"></script>
     <script src="script/modal.js"></script>
           
