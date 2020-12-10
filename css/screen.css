@@ -11171,6 +11171,8 @@ h1 {
 
 h2 {
   font-size: 5.6rem;
+  color: #00A8E1;
+  font-weight: 200 !important;
 }
 
 h3 {
@@ -11182,11 +11184,11 @@ h4 {
   color: white;
 }
 
-
 h7 {
   font-size: 2rem;
   color: white;
 }
+
 h5 {
   font-size: 4rem;
   color: #00A8E1;
@@ -11200,7 +11202,6 @@ h6 {
   display: inline;
   margin-bottom: 2.1rem;
   font-weight: 200;
-
 }
 
 header {
@@ -11227,9 +11228,7 @@ button {
   width: 100%;
   border: 3px solid #00A8E1;
   color: #00A8E1;
-
   font-size: 1.8rem;
-
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -11395,8 +11394,6 @@ nav {
 .c-custom-rows2 {
   margin-left: 240px;
   min-height: 106px;
-
-.c-d {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11656,5 +11653,55 @@ nav {
 
 .c-user-popup__input::placeholder {
   color: #00A8E1;
+}
+
+.c-table {
+  position: absolute;
+  left: 24rem;
+  top: 11.2rem;
+  width: 168rem;
+  height: 96.8rem;
+}
+
+.c-table__h2 {
+  position: relative;
+  top: 5.4rem;
+  text-align: center;
+}
+
+.c-table__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 8rem;
+  width: 159.2rem;
+}
+
+.c-table-row {
+  background-color: #0F171E;
+}
+
+.c-table-row__header {
+  background-color: #00A8E1;
+}
+
+.c-table-row__bis {
+  background-color: #4E5B69;
+}
+
+.c-table-th {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 1.6rem 0px;
+}
+
+.c-table-td {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  border: 0.2rem solid white;
 }
 /*# sourceMappingURL=screen.css.map */
