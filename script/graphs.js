@@ -17,6 +17,7 @@ fetch('./json/data.json')
     console.info('json object is aangemaakt');
     verwerkenGraph(jsonObject);
     verwerkenGraph2(jsonObject);
+    verwerkenGraph3(jsonObject);
     
     
   })
@@ -162,6 +163,66 @@ const verwerkenGraph2 = function(jsonObject) {
            }]
       }
    }
+});
+
+
+}
+
+const verwerkenGraph3 = function(jsonObject) {
+
+  const object = jsonObject;
+
+
+    var graph = object.Graphs[4]
+    var graph2 = object.Graphs[2]
+    var BackgroundColor = object.BackgroundColor[4]
+    var BorderColor = object.BorderColor[4]
+    console.log(graph)
+     
+  var ctx = document.getElementById(`myChart5`).getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+  data: {
+    labels: ["Green", "Blue", "Gray", "Purple", "Yellow", "Red", "Black"],
+    datasets: [
+      {
+      backgroundColor: [
+        "#6BD9FA",
+        "#9098FA",
+        "#FFE512",
+        "#F56565"
+      ],
+      data: object.Pie[0]
+    },
+  ]
+  },
+  options: {
+    legend: {
+      display: false //This will do the task
+   },
+   maintainAspectRatio: false,
+   
+   
+    scales: {
+      
+         xAxes: [{
+            gridLines: {
+               display: false
+            },
+            ticks: {
+              display: false
+          }
+         }],
+         yAxes: [{
+            gridLines: {
+               display: false
+            },
+            ticks: {
+              display: false
+          }
+         }]
+    }
+ }
 });
 
 
