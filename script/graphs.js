@@ -15,7 +15,8 @@ fetch('./json/data.json')
   .then(function(jsonObject) {
     //functie uitgevoerd en json maken
     console.info('json object is aangemaakt');
-    verwerkenData(jsonObject)
+    verwerkenGraph(jsonObject);
+    verwerkenGraph2(jsonObject);
     
     
   })
@@ -26,7 +27,7 @@ fetch('./json/data.json')
 };
 
 
-const verwerkenData = function(jsonObject) {
+const verwerkenGraph = function(jsonObject) {
 
   const object = jsonObject;
 
@@ -78,6 +79,93 @@ const verwerkenData = function(jsonObject) {
    }
 });
 }}
+
+
+const verwerkenGraph2 = function(jsonObject) {
+
+  const object = jsonObject;
+
+
+    var graph = object.Graphs[4]
+    var graph2 = object.Graphs[2]
+    var BackgroundColor = object.BackgroundColor[4]
+    var BorderColor = object.BorderColor[4]
+    console.log(graph)
+     
+  var ctx = document.getElementById(`myChart4`).getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        datasets: [
+        
+        {
+            label: '# of Votes',
+            data: object.Graphs[0], 
+            pointRadius: 0,
+            backgroundColor: object.BackgroundColor[4],
+            borderColor: object.BorderColor[0],
+            borderWidth: 1.4
+        },
+        {
+          label: '# of Votes',
+          data: object.Graphs[1], 
+          pointRadius: 0,
+          backgroundColor: object.BackgroundColor[4],
+          borderColor: object.BorderColor[1],
+          borderWidth: 1.4
+      },
+
+      {
+        label: '# of Votes',
+        data: object.Graphs[2], 
+        pointRadius: 0,
+        backgroundColor: object.BackgroundColor[4],
+        borderColor: object.BorderColor[2],
+        borderWidth: 1.4
+    },
+
+    {
+      label: '# of Votes',
+      data: object.Graphs[3], 
+      pointRadius: 0,
+      backgroundColor: object.BackgroundColor[4],
+      borderColor: object.BorderColor[3],
+      borderWidth: 1.4
+  }
+      ]
+    },
+    options: {
+      legend: {
+        display: false //This will do the task
+     },
+     maintainAspectRatio: false,
+     
+     
+      scales: {
+        
+           xAxes: [{
+              gridLines: {
+                 display: true
+              },
+              ticks: {
+                display: true
+            }
+           }],
+           yAxes: [{
+              gridLines: {
+                 display: true
+              },
+              ticks: {
+                display: true
+            }
+           }]
+      }
+   }
+});
+
+
+}
 
 
 //deze regels worden eerst uitgevoerd, alles hangt start vanaf hier.
