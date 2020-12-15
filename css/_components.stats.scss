@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-top: $padding-header;
+  padding-bottom: 200px;
 }
 
 .c-statstop__item {
@@ -75,6 +76,15 @@
   font-weight: 400;
 }
 
+.c-statsbot__textpie {
+  padding-top: 20px;
+  padding-left: 77px;
+  color: black;
+  font-size: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
 .c-row {
   display: flex;
   flex-direction: row;
@@ -98,4 +108,19 @@
   width: 384px;
   top: -84px;
   margin-left: -10px;
+}
+
+.chart-container1 {
+  position: relative;
+  max-height: 380px;
+  width: 1053.97px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.chart-containerpie {
+  position: relative;
+  max-height: 380px;
+
+  padding-top: 154px;
 }
