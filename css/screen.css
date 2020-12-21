@@ -10271,6 +10271,211 @@ nav {
   border-color: #0F171E;
 }
 
+/*movie form*/
+/*
+.c-form {
+    width: 95.1rem;
+    min-height: 111.8rem;
+    background-color: $color-aside;
+    border-radius: 1.6rem;
+}
+
+.c-form-container {
+    margin-left: 574px;
+    margin-top: 200px;
+}
+
+.c-form-position {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.c-h-size {
+    font-size: 4.2rem;
+    color: $color-white;
+    text-align: center;
+}
+
+.c-form-input {
+    font-size: 3rem;
+    background-color: $color-bg;
+    width: 39.5rem;
+    height: 6.5rem;
+
+    &::placeholder {
+        color: $color-aside-normal;
+    }
+
+    &_long {
+        font-size: 3rem;
+        background-color: $color-bg;
+        width: 100%;
+        height: 6.5rem;
+
+        &::placeholder {
+            color: $color-aside-normal;
+        }
+    }
+}
+
+.c-form-select {
+    font-size: 3rem;
+    background-color: $color-bg;
+    width: 39.5rem;
+    height: 6.5rem;
+    color: $color-aside-normal;
+    border-radius: 0;
+    border: 0;
+}
+
+.form-control-lg {
+    border-radius: 0;
+}
+
+.form-control {
+    border: 0;
+}
+*/
+.c-form1 {
+  max-width: 95.1rem;
+  min-height: 134.2rem;
+  background-color: #1A232E;
+  border-radius: 1.6rem;
+}
+
+.c-form1-padding {
+  padding: 6.5rem;
+}
+
+.c-form1-margin {
+  margin-bottom: 3.4rem;
+}
+
+.c-h-size {
+  font-size: 4.2rem;
+  color: white;
+}
+
+.c-form-input {
+  font-size: 3rem;
+  background-color: #0F171E;
+  width: 39.5rem;
+  height: 6.5rem;
+  border: 0;
+  border-radius: 0;
+}
+
+.c-form-input::-webkit-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input:-ms-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input::-ms-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input::placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input_long {
+  font-size: 3rem;
+  background-color: #0F171E;
+  width: 100%;
+  height: 6.5rem;
+}
+
+.c-form-input_long::-webkit-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input_long:-ms-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input_long::-ms-input-placeholder {
+  color: #00ADE7;
+}
+
+.c-form-input_long::placeholder {
+  color: #00ADE7;
+}
+
+.c-form-select {
+  font-size: 3rem;
+  background-color: #0F171E;
+  width: 39.5rem;
+  height: 6.5rem;
+  color: #00ADE7;
+  border-radius: 0;
+  border: 0;
+}
+
+.c-form-select-long {
+  font-size: 3rem;
+  background-color: #0F171E;
+  width: 100%;
+  height: 6.5rem;
+  color: #00ADE7;
+  border-radius: 0;
+  border: 0;
+}
+
+.c-form-select-short {
+  font-size: 3rem;
+  background-color: #0F171E;
+  width: 21.2rem;
+  height: 6.5rem;
+  color: #00ADE7;
+  border-radius: 0;
+  border: 0;
+  text-align: center;
+}
+
+.c-form__textarea {
+  width: 100%;
+  height: 27.4rem;
+  background-color: #0F171E;
+  border: 0;
+  border-radius: 0;
+  color: #00A8E1;
+  font-size: 3rem;
+}
+
+.c-form__button {
+  width: 35.1rem;
+  height: 10rem;
+  background-color: #0F171E;
+  color: #00A8E1;
+}
+
+.c-form__button2 {
+  width: 35.1rem;
+  height: 10rem;
+  background-color: #00A8E1;
+  color: #0F171E;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-form__button--submit {
+  width: 18.6rem;
+  height: 5.6rem;
+  background-color: #0F171E;
+  color: #00A8E1;
+  border: 0;
+}
+
+.c-form__button--submit:hover {
+  background-color: #0F171E;
+}
+
 .c-statstop {
   height: 100%;
   width: 100%;
