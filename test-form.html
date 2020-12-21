@@ -19,15 +19,79 @@
                     <h2 class="col-12 c-h-size">Add New Serie</h2>
                 <div class="row">
                   <div class="col-lg-6 col-sm-12">
-                    <input type="text" class="form-control c-form1-margin c-form-input" placeholder="Title">
+                    <input type="text" class="form-control c-form1-margin c-form-input" placeholder="Title*" required>
                   </div>
                   <div class="col-lg-6 col-sm-12">
-                    <input type="text" class="form-control c-form1-margin" placeholder="Info">
+                    <input type="text" class="form-control c-form1-margin c-form-input" placeholder="Info*" required>
                   </div>
                   <div class="col-lg-6 col-sm-12">
-                    <input type="text" class="form-control c-form1-margin" placeholder="Info">
+                    <input type="text" class="form-control c-form1-margin c-form-input" placeholder="Actors*" required>
                   </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <select class="custom-select c-form1-margin c-form-select" id="mySelect" onchange="myFunction()" required>
+                        <option selected>Genres*</option>
+                        <option value="1">Action</option>
+                        <option value="2">Fantasie</option>
+                        <option value="3">Horror</option>
+                        <option value="4">Triller</option>
+                        <option value="5">Horror</option>
+                        <option value="6">Romantic</option>
+                      </select>
                 </div>
+                <div class="col-12">
+                  <select class="custom-select c-form1-margin c-form-select-long" id="mySelect" onchange="myFunction()" required>
+                    <option selected>Language*</option>
+                      <option value="1">Englisch</option>
+                      <option value="2">France</option>
+                      <option value="3">Chinees</option>
+                      <option value="4">German</option>
+                      <option value="5">Italian</option>
+                      <option value="6">Dutch</option>
+                    </select>
+              </div>
+              <div class="col-12">
+                <select class="custom-select c-form1-margin c-form-select-long" id="mySelect" onchange="myFunction()" required>
+                  <option selected>Subtitles*</option>
+                    <option value="1">Englisch</option>
+                    <option value="2">France</option>
+                    <option value="3">Chinees</option>
+                    <option value="4">German</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Dutch</option>
+                  </select>
+               </div>
+               <div class="col-12">
+                <textarea class="c-form__textarea" id="discription" name="discription">Discription</textarea>
+                <label for="discription">Discription*</label>
+               </div>
+               <h2 class="col-12 c-h-size">Add as serie season</h2>
+               <div class="col-lg-4 col-md-8 col-sm-12">
+                <select class="custom-select c-form1-margin c-form-select-short" id="mySelect" onchange="myFunction()" required>
+                  <option selected>Add to serie</option>
+                    <option value="1">Serie 1</option>
+                    <option value="2">Serie 2</option>
+                    <option value="3">Serie 3</option>
+                    <option value="4">Serie 4</option>
+                    <option value="5">Serie 5</option>
+                    <option value="6">Serie 6</option>
+                  </select>
+               </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="c-form__button c-form1-margin">Add new image</div>
+                   </div>
+                   <div class="col-lg-6">
+                    <div class="c-form__button2 c-form1-margin">
+                      <p>Open/drop picture’s</p>
+                      <p>Or</p>
+                      <p>browse file</p>
+                    </div>
+                   </div>
+                   <div class="col-12">
+                    <button class="c-form__button--submit" type="submit">Submit</button>
+                   </div>
+                 </div>
               </form>
             </div>
             </div>
