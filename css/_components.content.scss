@@ -271,3 +271,94 @@
         background-color: $color-bg;
     }
 }
+
+/*user managment detail*/
+
+.c-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-contact {
+    margin: 225px 0;
+}
+
+.c-form__group {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.c-form__label {
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.c-form__label:not(.c-form__label--checkbox) {
+    position: absolute;
+    top: 0;
+    left: 9px;
+    line-height: 2.4;
+    color: $color-aside-normal;
+    cursor: text;
+    pointer-events: none;
+
+    &--optional {
+        text-align: right;
+    }
+}
+
+.c-form__input {
+    transition: all 0.2s;
+    background-color: $color-bg;
+    border: 0;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        color: $color-white;
+        background-color: $color-bg;
+        border: 1px solid $color-aside-normal;
+    }
+
+    &::placeholder {
+        opacity: 0;
+    }
+
+    &~.c-form__label {
+        transition: all 0.2s;
+    }
+
+    &:not(:placeholder-shown) {
+        padding-top: 1.25rem;
+
+        &~.c-form__label {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+.form-control-lg {
+    height: 6.5rem;
+}
+
+.pb-0,
+.py-0 {
+    font-size: 3rem;
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.c-bg__form {
+    background-color: $color-aside;
+}
