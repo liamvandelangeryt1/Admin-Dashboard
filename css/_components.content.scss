@@ -285,6 +285,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .c-contact {
@@ -357,7 +358,7 @@
     font-size: 3rem;
     color: $color-white;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .c-bg__form {
@@ -367,4 +368,106 @@
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+.c-pay {
+    margin-top: 3rem;
+
+    &__content {
+        background-color: $color-aside;
+    }
+
+    &__margin {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    &__line {
+        background-color: $color-aside-normal;
+    }
+
+    &__img {
+        width: 60%;
+        height: auto;
+    }
+
+    &__mastercardtext {
+        color: $color-white;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+
+        &--2 {
+            color: $color-white;
+            font-size: 2rem;
+        }
+
+        &--2plan {
+            color: $color-white;
+            font-size: 1.6rem;
+        }
+
+        &--date {
+            color: $gray-300;
+            font-size: 1.2rem;
+        }
+
+        &--money {
+            color: $color-aside-normal;
+            font-size: 1.6rem;
+        }
+
+        &--margin {
+            margin: 0;
+        }
+    }
+
+    &__contentpay {
+        margin: auto;
+    }
+
+    &__button {
+        height: 3rem;
+
+        &--container {
+            width: 90%;
+            margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        &--method {
+            width: 60%;
+            height: 20%;
+            font-size: 1rem;
+        }
+
+        &--extra {
+            width: 100%;
+            height: auto;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.pb-0__pay {
+    font-size: 3rem;
+    color: $color-white;
+    text-align: center;
+    margin: auto;
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+.o-circel2 {
+    height: 145px;
+    width: 145px;
+    background-image: url("../img/user-detail/atikh-bana-_KaMTEmJnxY-unsplash.jpg");
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-bottom: 3rem;
 }
