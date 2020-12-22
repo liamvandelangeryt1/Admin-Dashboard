@@ -11245,6 +11245,13 @@ button > a {
   padding-top: 1 rem;
 }
 
+form {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5rem;
+}
+
 .c-logo {
   padding: 30px 50px;
 }
@@ -12082,7 +12089,22 @@ nav {
           filter: invert(1);
 }
 
+.c-settings {
+  margin-top: 15rem;
+  margin-left: 24rem;
+}
+
+.c-settings > div {
+  color: white;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.c-settings > div > div {
+  margin-top: 5rem;
+}
+
 .c-headnav .container {
-  @med width: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=screen.css.map */
