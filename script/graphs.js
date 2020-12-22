@@ -54,9 +54,21 @@ const verwerkenGraph = function(jsonObject) {
         }]
     },
     options: {
+
+      
       legend: {
         display: false //This will do the task
      },
+
+     layout: {
+      padding: {
+          left: -10,
+          right: 0,
+          top: 0,
+          bottom: 0
+      }
+    },
+     responsive:true,
      maintainAspectRatio: false,
      
       scales: {
@@ -209,6 +221,14 @@ const verwerkenGraph3 = function(jsonObject) {
     legend: {
       display: false //This will do the task
    },
+   layout: {
+    padding: {
+        left: -10,
+        right: 0,
+        top: 0,
+        bottom: 0
+    }
+  },
    maintainAspectRatio: false,
    
    

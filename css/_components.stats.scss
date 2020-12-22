@@ -1,11 +1,13 @@
-
 .c-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   margin-left: $padding-nav;
-}
 
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .c-statstop {
   height: 100%;
@@ -15,7 +17,7 @@
   margin-top: $padding-header;
   padding-bottom: 200px;
 
-  &__item{
+  &__item {
     background-color: white;
     width: 374.11px;
     height: 216.31px;
@@ -23,18 +25,18 @@
     padding-bottom: 60px;
 
     &--svg1 {
-    position: relative;
-    top: -56px;
+      position: relative;
+      top: -56px;
     }
 
     &--svg2 {
-    position: relative;
-    top: -14px;
+      position: relative;
+      top: -14px;
     }
 
     &--svg3 {
-    position: relative;
-    top: -17px;
+      position: relative;
+      top: -17px;
     }
   }
 
@@ -43,14 +45,14 @@
     padding-top: 27px;
     display: flex;
     flex-direction: column;
-  
+
     &--tit1 {
       font-family: "Open Sans", sans-serif;
       font-size: 17px;
       font-weight: 400;
       color: #818181;
     }
-  
+
     &--tit2 {
       font-family: "Open Sans", sans-serif;
       font-size: 28px;
@@ -58,18 +60,37 @@
       color: black;
     }
   }
+
+  @media (max-width: 1200px) {
+    &__item {
+      background-color: white;
+      width: 45%;
+      height: 216.31px;
+      margin-bottom: 5%;
+      border-radius: 4px 4px 0px 0px;
+    }
+  }
+
+  @media (max-width: 1844px) and (min-width: 1200px) {
+    &__item {
+      background-color: white;
+      width: 24%;
+      height: 216.31px;
+      border-radius: 4px 4px 0px 0px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
-
-.c-statsbot{
-  &__item{
+.c-statsbot {
+  &__item {
     margin-top: 67px;
     width: 1186px;
     height: 533px;
     border-radius: 4px 4px 0px 0px;
     background-color: white;
 
-  &--left {
+    &--left {
       margin-top: 67px;
       width: 375px;
       height: 533px;
@@ -84,24 +105,57 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 
-
-    &--left{
+    &--left {
       margin: 20px 0 55px 20px;
     }
-  
-    &--pie{
+
+    &--pie {
       text-align: center;
+    }
+  }
+
+  @media (max-width: 1844px) {
+    &__item {
+      margin-top: 67px;
+      width: 65%;
+      height: 533px;
+      border-radius: 4px 4px 0px 0px;
+      background-color: white;
+
+      &--left {
+        margin-top: 67px;
+        width: 25%;
+        height: 533px;
+        border-radius: 4px 4px 0px 0px;
+        background-color: white;
+      }
+    }
+
+    &__text {
+      color: black;
+      font-size: 23px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+
+      &--left {
+        margin: 20px 0 55px 20px;
+      }
+
+      &--pie {
+        text-align: center;
+      }
     }
   }
 }
 
-
 .chart-container {
   position: relative;
   max-height: 216.31px;
-  width: 384px;
+  width: 100%;
   top: -84px;
-  margin-left: -10px;
+
+  @media (max-width: 1844px) {
+  }
 }
 
 .chart-containercomb {
@@ -109,9 +163,11 @@
   height: 408px;
   width: 1106px;
   margin: auto;
- 
 
-
+  @media (max-width: 1844px) {
+    height: 408px;
+    width: 90%;
+  }
 }
 
 .chart-containerpie {
@@ -119,8 +175,13 @@
   width: 286px;
   height: 286px;
   margin-top: 94px;
+
+  @media (max-width: 1844px) {
+    height: 408px;
+    width: 90%;
+  }
 }
 
-.kut{
+.kut {
   display: none;
 }
