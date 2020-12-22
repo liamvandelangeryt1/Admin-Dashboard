@@ -11171,6 +11171,8 @@ h1 {
 
 h2 {
   font-size: 5.6rem;
+  color: #00A8E1;
+  font-weight: 200 !important;
 }
 
 h3 {
@@ -11354,6 +11356,107 @@ nav {
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+
+.c-btn-text {
+  font-size: 2.4rem;
+  color: #00A8E1;
+}
+
+.c-btn-icon {
+  width: 2.4rem;
+  height: 2.1rem;
+}
+
+.c-seriefilm {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c-movie-item {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.c-custom-rows {
+  margin-left: 240px;
+  margin-top: 183px;
+  min-height: 871px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-custom-rows2 {
+  margin-left: 240px;
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-icon {
+  position: absolute;
+}
+
+.c-icon-1 {
+  width: 48px;
+  height: 43px;
+  color: green;
+}
+
+.c-icon-2 {
+  width: 48px;
+  height: 43px;
+  color: red;
+}
+
+.c-content-titel {
+  margin-top: -10px;
+}
+
+.page-link {
+  color: #00A8E1;
+  background-color: #0F171E;
+  border: 0;
+  border-radius: 0;
+  font-size: 3rem;
+}
+
+.page-link:active {
+  color: white;
+}
+
+.page-link:hover {
+  color: white;
+  background-color: #0F171E;
+  border-color: #0F171E;
+}
+
+.c-rotade {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.page-item.active .page-link {
+  color: white;
+  background-color: #0F171E;
+  border-color: #0F171E;
 }
 
 .c-statstop {
@@ -12010,5 +12113,54 @@ nav {
 
 .c-headnav .container {
   @med width: 100%;
+  
+.c-table {
+  position: absolute;
+  left: 24rem;
+  top: 11.2rem;
+  width: 168rem;
+  height: 96.8rem;
+}
+
+.c-table__h2 {
+  position: relative;
+  top: 5.4rem;
+  text-align: center;
+}
+
+.c-table__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 8rem;
+  width: 159.2rem;
+}
+
+.c-table-row {
+  background-color: #0F171E;
+}
+
+.c-table-row__header {
+  background-color: #00A8E1;
+}
+
+.c-table-row__bis {
+  background-color: #4E5B69;
+}
+
+.c-table-th {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 1.6rem 0px;
+}
+
+.c-table-td {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  border: 0.2rem solid white;
 }
 /*# sourceMappingURL=screen.css.map */
