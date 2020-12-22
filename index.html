@@ -120,11 +120,11 @@
             </li>
             <li class="">
                 <img src="img/icons/money-check-alt-solid.svg" class="c-icon img-fluid">
-            REVENUE
+           <a href="content.html"> REVENUE</a>
             </li>
             <li class="">
-                <img src="img/icons/chart-line-solid.svg" class="c-icon img-fluid"> STATISTICS
-           
+                <img src="img/icons/chart-line-solid.svg" class="c-icon img-fluid"> 
+                <a href="content.html"> STATISTICS</a>
             </li>
         
         </ul>
@@ -153,18 +153,20 @@
     <div class="c-statstop">
 
       <div class="c-row">
+
         <div class="c-statstop__item">
           <div class="c-statstop__text">
             <span class="c-statstop__text--tit1">Subscribed users</span>
             <span class="c-statstop__text--tit2">3.067.763</span>
             
+          
           </div>
           <div class="chart-container">
             <canvas id="myChart0" width="400" height="400"></canvas>
         </div>
           
-          
         </div>
+
         <div class="c-statstop__item">
           <div class="c-statstop__text">
             <span class="c-statstop__text--tit1">Trial users</span>
@@ -205,23 +207,24 @@
       
       <div class="c-row">
         <div class="c-statsbot__item">
-          <div class="c-statsbot__text">
-            <span class="c-statsbot__text">Combined graph</span>
+          <div class="c-statsbot__text c-statsbot__text--left">
+            <span class="">Combined graph</span>
             
           </div>
           
-          <div class="chart-container1">
+          <div class="chart-containercomb">
             <canvas id="myChart4" width="400" height="400"></canvas>
+            <canvas id="myChart6" width="400" height="400"></canvas>
           </div>
 
 
         </div>
         <div class="c-statsbot__item--left">
-          <div class="c-statsbot__textpie">
-            <span class="c-statsbot__text">Combined graph</span>
+          <div class="c-statsbot__text c-statsbot__text--pie">
+            <span class="">Piechart</span>
           </div>
           <div class="chart-containerpie">
-            <canvas id="myChart5" width="400" height="400"></canvas>
+            <canvas id="myChart5"></canvas>
           </div>
         </div>
         
@@ -320,6 +323,7 @@
   
     <script src="script/graphs.js"></script>
     <script src="script/modal.js"></script>
+    <script src="script/display.js"></script>
           
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
