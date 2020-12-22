@@ -34,6 +34,7 @@ console.log(objects)
     let html_screen = "";
         
     html_screen += `
+
     <tr class="c-table-row__header">
     <th class="c-table-th">ID</th>
     <th class="c-table-th">Name</th>
@@ -42,7 +43,8 @@ console.log(objects)
     <th class="c-table-th">View time</th>
     <th class="c-table-th">Adress</th>
     <th class="c-table-th">Phone</th>
-  </tr>`;
+  </tr>
+  `;
 
   for(const object of objects){
     const id= object.id;
@@ -57,7 +59,7 @@ console.log(objects)
  
         
         html_screen += `
-        <tr class="c-table-row">
+        <tr id= "filter" class="c-table-row">
         <td class="c-table-td">${id}</th>
         <td class="c-table-td">${firstName} ${lastName}</th>
         <td class="c-table-td">${email}</th>
@@ -69,6 +71,8 @@ console.log(objects)
                         
      
     }
+
+    
     
     document.querySelector(".js-db-users").innerHTML = html_screen;
 
@@ -76,8 +80,32 @@ console.log(objects)
   };
 
 
+  
+
 
   document.addEventListener('DOMContentLoaded', function() {
     console.info('DOM geladen');
     laadJsonData();
+
+    $("#trial").click(function () {
+    
+        var rows = $(".js-db-users").find("tr").hide();
+        $(".c-table-row__header").show();
+        rows.filter(":contains('trial')").show();
+     });
+    
+     $("#total").click(function () {
+         
+        var rows = $(".js-db-users").find("tr").show();
+       
+     });
+    
+     $("#subscribed").click(function () {
+   
+    
+        var rows = $(".js-db-users").find("tr").hide();
+        $(".c-table-row__header").show();
+        rows.filter(":contains('active')").show();
+     });
+    
   });
