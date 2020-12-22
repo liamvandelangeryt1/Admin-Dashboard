@@ -1,0 +1,18 @@
+.c-mvtop10 {
+    margin-top: 23rem;
+
+    &__img {
+        width: 30rem;
+        height: auto;
+    }
+
+    &__h {
+        color: $color-white;
+        font-size: 3rem;
+    }
+
+    &__text {
+        color: $color-aside-normal;
+        font-size: 2rem;
+    }
+}

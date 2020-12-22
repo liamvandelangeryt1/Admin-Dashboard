@@ -11643,6 +11643,25 @@ nav {
   border: 0.2rem solid white;
 }
 
+.c-mvtop10 {
+  margin-top: 23rem;
+}
+
+.c-mvtop10__img {
+  width: 30rem;
+  height: auto;
+}
+
+.c-mvtop10__h {
+  color: white;
+  font-size: 3rem;
+}
+
+.c-mvtop10__text {
+  color: #00ade7;
+  font-size: 2rem;
+}
+
 .c-btn-text {
   font-size: 2.4rem;
   color: #00a8e1;
@@ -12066,7 +12085,7 @@ nav {
 }
 
 .c-pay__content {
-  background-color: #1A232E;
+  background-color: #1a232e;
 }
 
 .c-pay__margin {
@@ -12076,7 +12095,7 @@ nav {
 }
 
 .c-pay__line {
-  background-color: #00ADE7;
+  background-color: #00ade7;
 }
 
 .c-pay__img {
@@ -12106,7 +12125,7 @@ nav {
 }
 
 .c-pay__mastercardtext--money {
-  color: #00ADE7;
+  color: #00ade7;
   font-size: 1.6rem;
 }
 
