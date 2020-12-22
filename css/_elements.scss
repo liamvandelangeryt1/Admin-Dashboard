@@ -1,98 +1,91 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-background-color: $color-bg;
-font-family: $font-amazon !important;
+  background-color: $color-bg;
+  font-family: $font-amazon !important;
 }
 
 a {
-    color: inherit;
-    font-weight: $font-bold !important;
-    
-    :hover{
-        text-decoration: none;
-        color: inherit;
+  color: inherit;
+  font-weight: $font-bold !important;
 
-    }
+  :hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 h1 {
-    font-size: 6.4rem;
-    color: $color-white;
-    font-weight: $font-thin !important;
+  font-size: 6.4rem;
+  color: $color-white;
+  font-weight: $font-thin !important;
 }
 
 h2 {
-    font-size: 5.6rem;
-    color: $color-light-blue;
-    font-weight: $font-ultralight !important;
+  font-size: 5.6rem;
+  color: $color-light-blue;
+  font-weight: $font-ultralight !important;
 }
 
 h3 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h4 {
-    font-size: 3rem;
-    color: $color-white;
-
+  font-size: 3rem;
+  color: $color-white;
 }
 
-h7 {
-    font-size: 2rem;
-    color: $color-white;
+.h7 {
+  font-size: 2rem;
+  color: $color-white;
 }
 
-         
-h5{
-    font-size:4rem;
-    color: $color-light-blue;
-    margin-bottom: 1.8rem;
-    font-weight: $font-ultralight !important;
+h5 {
+  font-size: 4rem;
+  color: $color-light-blue;
+  margin-bottom: 1.8rem;
+  font-weight: $font-ultralight !important;
 }
-h6{ 
-    font-size:2.4rem;
-    color: $white;
-    display: inline;
-    margin-bottom:2.1rem ;
-    font-weight: $font-ultralight; 
-}     
-
-header{
-    z-index: 800;
-    background-color: $color-aside;
-    height: 11.2rem;
-    width: calc(100% - 24rem);
-    position: fixed;
-    display: flex;
-    align-items: center;
-    right: 0;
-    top: 0;
-    padding-left: 40px;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+h6 {
+  font-size: 2.4rem;
+  color: $white;
+  display: inline;
+  margin-bottom: 2.1rem;
+  font-weight: $font-ultralight;
 }
-
-
 button {
-    background-color: $color-aside;
-    height:57px;
-    width: 100%;
-    border: 3px solid $color-light-blue;
+  background-color: $color-aside;
+  height: 57px;
+  width: 100%;
+  border: 3px solid $color-light-blue;
 
-    color: $color-light-blue;
-    font-size:1.8rem;
-    align-content: center;
+  color: $color-light-blue;
+  font-size: 1.8rem;
+  align-content: center;
 
-    &:hover {
-        color: $white;
-        border-color: $color-hover-blue;
-        fill: $color-hover-blue;
-        background-color: $color-hover-blue;
-    }
+  &:hover {
+    color: $white;
+    border-color: $color-hover-blue;
+    fill: $color-hover-blue;
+    background-color: $color-hover-blue;
+  }
 
-    >a {
-        padding-top: 1 rem;
-    }
+  > a {
+    padding-top: 1 rem;
+  }
+}
+
+nav {
+  width: 24rem;
+  height: 100%;
+  background-color: $color-aside;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
