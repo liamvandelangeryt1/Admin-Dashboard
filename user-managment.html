@@ -29,7 +29,7 @@
       <h1>User Management</h1>
       <div class="container ">
         <div class="row justify-content-end">
-            <button class="col-lg-2 mr-4">
+            <button  id="total"class="col-lg-2 mr-4">
                 <svg   x="0px" y="0px"
                 viewBox="0 0 22 22"   class="c-icon-header">
            <path id="Path_1373"  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
@@ -42,7 +42,7 @@
            <a>TOTAL</a>
                 
             </button>
-            <button class="col-lg-2 mr-4">
+            <button id="subscribed" class="col-lg-2 mr-4">
 
                 <svg  x="0px" y="0px"
 	 viewBox="0 0 22 22"  class="c-icon-header">
@@ -61,7 +61,7 @@
 </svg><a>SUBSCRIPTIONS</a>
                 
             </button>
-            <button class="col-lg-2 mr-4">
+            <button id="trial" class="col-lg-2 mr-4">
                 <svg  x="0px" y="0px"
 	 viewBox="0 0 22 22" class="c-icon-header" >
 
@@ -128,6 +128,13 @@
 </nav>
 
     <main>
+      <div class="c-table">
+        <h2 class="c-table__h2">Overview</h2>
+          <table class="c-table__container js-db-users">
+          
+           
+          </table>
+      </div>
   
       
     </main>
@@ -213,17 +220,7 @@
       </div>
     </div>
 
-  <main>
-
-    <div class="c-table">
-      <h2 class="c-table__h2">Overview</h2>
-        <table class="c-table__container js-db-users">
-        
-         
-        </table>
-    </div>
-
-  </main>
+ 
     <script src="script/database.js"></script>
     <script src="script/modal.js"></script>
           
