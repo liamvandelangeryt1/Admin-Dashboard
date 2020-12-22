@@ -339,6 +339,7 @@
 
     &:not(:placeholder-shown) {
         padding-top: 1.25rem;
+        color: $color-white;
 
         &~.c-form__label {
             font-size: 1.2rem;
@@ -361,4 +362,9 @@
 
 .c-bg__form {
     background-color: $color-aside;
+    padding: 3rem;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }

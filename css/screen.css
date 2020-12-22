@@ -11978,6 +11978,7 @@ nav {
 
 .c-form__input:not(:placeholder-shown) {
   padding-top: 1.25rem;
+  color: white;
 }
 
 .c-form__input:not(:placeholder-shown) ~ .c-form__label {
@@ -11999,6 +12000,12 @@ nav {
 
 .c-bg__form {
   background-color: #1A232E;
+  padding: 3rem;
+}
+
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .c-headnav .container {
