@@ -8,12 +8,11 @@
 
 @import "objects";
 
-@import "bootstrap.override";
 
 @import "components.logo";
 @import "components.sidenav";
-@import "components.content";
 @import "components.stats";
 @import "components.user-popup";
 @import "components.tabel";
-
+@import "components.content";
+@import "bootstrap.override";
