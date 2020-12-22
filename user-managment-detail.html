@@ -128,113 +128,156 @@
     <section id="contact" class="c-contact">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 m-auto c-bg__form">
+            <div class="col-lg-7 m-auto c-bg__form">
               <h2 class="pb-0">User Information</h2>
-              <form class="c-form" id="js-needsValidation">
-                <div class="form-group c-form__group">
-                  <input
-                    type="text"
-                    name="name"
-                    id="naam"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="First name + Last name"
-                    minlength="2"
-                    required
-                  />
-                  <label class="c-form__label" for="naam"> Name </label>
+              <div><div class="o-circel2"></div></div>
+              <form class="row c-form" id="js-needsValidation">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="c-form__group">
+                      <input
+                        type="number"
+                        name="id"
+                        id="id"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="Id"
+                        min="0"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> Id </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="First name + Last name"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> Name </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="text"
+                        name="username"
+                        id="usernaam"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="Name from account"
+                        minlength="2"
+                        required
+                      />
+                      <label class="c-form__label" for="naam"> UserName </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="text"
-                    name="username"
-                    id="usernaam"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="Name from account"
-                    minlength="2"
-                    required
-                  />
-                  <label class="c-form__label" for="naam"> UserName </label>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="number"
+                        id="age"
+                        name="number"
+                        class="form-control form-control-lg c-form__input"
+                        min="18"
+                        max="100"
+                        placeholder="Age"
+                        required
+                      />
+                      <label class="c-form__label" for="age"> Age </label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="Date of birth"
+                        required
+                      />
+                      <label class="c-form__label" for="date">date of birth</label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="number"
-                    id="age"
-                    name="number"
-                    class="form-control form-control-lg c-form__input"
-                    min="18"
-                    max="100"
-                    placeholder="Age"
-                    required
-                  />
-                  <label class="c-form__label" for="age"> Age </label>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="text"
+                        id="adress"
+                        name="adress"
+                        class="form-control form-control-lg c-form__input"
+                        required
+                        placeholder="Adress"
+                      />
+                      <label class="c-form__label" for="adress"> Adress </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="Date of birth"
-                    required
-                  />
-                  <label class="c-form__label" for="date">date of birth</label>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="number"
+                        name="zipcode"
+                        id="zipcode"
+                        class="form-control form-control-lg c-form__input"
+                        min="1000"
+                        max="9999"
+                        placeholder="Zipcode"
+                        required
+                      />
+                      <label class="c-form__label" for="zipcode"> zipcode </label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="email"
+                        name="city"
+                        id="city"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="City"
+                        required
+                      />
+                      <label class="c-form__label" for="city"> city </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="text"
-                    id="adress"
-                    name="adress"
-                    class="form-control form-control-lg c-form__input"
-                    required
-                    placeholder="Adress"
-                  />
-                  <label class="c-form__label" for="adress"> Adress </label>
-                </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="number"
-                    name="zipcode"
-                    id="zipcode"
-                    class="form-control form-control-lg c-form__input"
-                    min="1000"
-                    max="9999"
-                    placeholder="Zipcode"
-                    required
-                  />
-                  <label class="c-form__label" for="zipcode"> zipcode </label>
-                </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="email"
-                    name="city"
-                    id="city"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="City"
-                    required
-                  />
-                  <label class="c-form__label" for="city"> city </label>
-                </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="tel"
-                    id="gsm" 
-                    name="phonenum"
-                    pattern="((^[+\s0-9]{2,6}[\s\./0-
-                                    9]*$))"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="Phone number"
-                  />
-                  <label class="c-form__label" for="gsm"> Phone number </label>
-                </div>
-                <div class="form-group c-form__group">
-                  <input
-                    type="email"
-                    id="email" 
-                    name="email"
-                    class="form-control form-control-lg c-form__input"
-                    placeholder="Email"
-                  />
-                  <label class="c-form__label" for="email"> Email </label>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="tel"
+                        id="gsm" 
+                        name="phonenum"
+                        pattern="((^[+\s0-9]{2,6}[\s\./0-
+                                        9]*$))"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="Phone number"
+                      />
+                      <label class="c-form__label" for="gsm"> Phone number </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="email"
+                        id="email" 
+                        name="email"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="Email"
+                      />
+                      <label class="c-form__label" for="email"> Email </label>
+                    </div>
+                  </div>
                 </div>
                 <button
                   type="submit"
@@ -246,9 +289,40 @@
               </form>
             </div>
           </div>
-          <div class="colum">
-            <div>
-
+          <div class="row c-pay">
+            <div class="col-lg-7 m-auto c-pay__content">
+              <h2 class="col-12 pb-0__pay">Users payment method</h2>
+              <hr class="c-pay__line">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 c-pay__margin">
+                  <img class="c-pay__img" src="img/pay/MasterCard.png" alt="mastercard">
+                  <p class="c-pay__mastercardtext">**** **** **** 7478</p>
+                  <button class="c-pay__button--method">Change payment method</button>
+                </div>
+                <div class="col-lg-6 col-md-6 c-pay__contentpay">
+                  <div>
+                    <p class="c-pay__mastercardtext--2">Previous payment:</p>
+                    <p class="c-pay__mastercardtext--date">December.20.2020</p>
+                    <p class="c-pay__mastercardtext--2">Next payment:</p>
+                    <p class="c-pay__mastercardtext--date">Januari.20.2020</p>
+                  </div>
+                  <div>
+                    <p class="c-pay__mastercardtext--2plan c-pay__mastercardtext--margin">Price: <span class="c-pay__mastercardtext--money">12€</span></p>
+                    <p class="c-pay__mastercardtext--2plan">Payment plan: <span class="c-pay__mastercardtext--money">normal</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row c-pay__button--container">
+                <div class="col-lg-4 c-pay__button">
+                  <button class="c-pay__button--extra">Change plan</button>
+                </div>
+                <div class="col-lg-4">
+                  <button class="c-pay__button--extra">Cancel payment</button>
+                </div>
+                <div class="col-lg-4">
+                  <button class="c-pay__button--extra">Delete payment</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
