@@ -11149,7 +11149,7 @@ html {
 }
 
 body {
-  background-color: #0F171E;
+  background-color: #0f171e;
   font-family: "Montserrat", sans-serif !important;
 }
 
@@ -11164,13 +11164,15 @@ a :hover {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 5.8rem;
   color: white;
   font-weight: 100 !important;
 }
 
 h2 {
   font-size: 5.6rem;
+  color: #00a8e1;
+  font-weight: 200 !important;
 }
 
 h3 {
@@ -11189,7 +11191,7 @@ h7 {
 
 h5 {
   font-size: 4rem;
-  color: #00A8E1;
+  color: #00a8e1;
   margin-bottom: 1.8rem;
   font-weight: 200 !important;
 }
@@ -11204,7 +11206,7 @@ h6 {
 
 header {
   z-index: 800;
-  background-color: #1A232E;
+  background-color: #1a232e;
   height: 11.2rem;
   width: calc(100% - 24rem);
   position: fixed;
@@ -11222,11 +11224,11 @@ header {
 }
 
 button {
-  background-color: #1A232E;
+  background-color: #1a232e;
   height: 57px;
   width: 100%;
-  border: 3px solid #00A8E1;
-  color: #00A8E1;
+  border: 3px solid #00a8e1;
+  color: #00a8e1;
   font-size: 1.8rem;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -11234,9 +11236,9 @@ button {
 
 button:hover {
   color: #fff;
-  border-color: #79B8F3;
-  fill: #79B8F3;
-  background-color: #79B8F3;
+  border-color: #79b8f3;
+  fill: #79b8f3;
+  background-color: #79b8f3;
 }
 
 button > a {
@@ -11256,12 +11258,12 @@ button > a {
   display: inline;
   width: 22px;
   height: 22px;
-  fill: #00A8E1;
+  fill: #00a8e1;
   padding-bottom: 0.5rem;
 }
 
 .c-icon-header:hover {
-  fill: #79B8F3;
+  fill: #79b8f3;
 }
 
 .c-admin {
@@ -11286,7 +11288,7 @@ button > a {
   border-radius: 100%;
   width: 80px;
   height: 80px;
-  border-color: #00A8E1;
+  border-color: #00a8e1;
   border-image-width: 5px;
   border-style: solid;
   margin-bottom: 2.4rem;
@@ -11318,7 +11320,7 @@ button > a {
   text-align: left;
   width: 100%;
   display: block;
-  background-color: #00ADE7;
+  background-color: #00ade7;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 5px;
@@ -11332,7 +11334,7 @@ button > a {
 }
 
 .c-sidenav ul li:hover {
-  background-color: #0F171E;
+  background-color: #0f171e;
 }
 
 .c-sidenav ul li a:hover {
@@ -11341,13 +11343,13 @@ button > a {
 }
 
 #active {
-  background-color: #0F171E;
+  background-color: #0f171e;
 }
 
 nav {
   width: 24rem;
   height: 100%;
-  background-color: #1A232E;
+  background-color: #1a232e;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -11507,7 +11509,7 @@ nav {
   left: 26rem;
   width: 80rem;
   height: 42rem;
-  background-color: #1A232E;
+  background-color: #1a232e;
   border-radius: 0.6rem;
   z-index: 1;
   padding: 4.8rem;
@@ -11531,19 +11533,19 @@ nav {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  border: 0.5rem solid #00A8E1;
+  border: 0.5rem solid #00a8e1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .c-user-popup__name {
-  color: #00A8E1;
+  color: #00a8e1;
   padding-bottom: 2.4rem;
 }
 
 .c-user-popup__function {
-  color: #00A8E1;
+  color: #00a8e1;
 }
 
 .c-user-popup__info {
@@ -11559,14 +11561,14 @@ nav {
 .c-user-popup__label {
   width: 12rem;
   padding: 0.8rem;
-  color: #1A232E;
-  background-color: #00A8E1;
+  color: #1a232e;
+  background-color: #00a8e1;
   font-weight: 500;
 }
 
 .c-user-popup__input {
   width: 64%;
-  border: 0.5rem solid #00A8E1;
+  border: 0.5rem solid #00a8e1;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   font-size: 1.6rem;
   background-image: none;
@@ -11576,24 +11578,74 @@ nav {
 }
 
 .c-user-popup__input::-webkit-input-placeholder {
-  color: #00A8E1;
+  color: #00a8e1;
 }
 
 .c-user-popup__input:-ms-input-placeholder {
-  color: #00A8E1;
+  color: #00a8e1;
 }
 
 .c-user-popup__input::-ms-input-placeholder {
-  color: #00A8E1;
+  color: #00a8e1;
 }
 
 .c-user-popup__input::placeholder {
-  color: #00A8E1;
+  color: #00a8e1;
+}
+
+.c-table {
+  position: absolute;
+  left: 24rem;
+  top: 11.2rem;
+  width: 168rem;
+  height: 96.8rem;
+}
+
+.c-table__h2 {
+  position: relative;
+  top: 5.4rem;
+  text-align: center;
+}
+
+.c-table__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 8rem;
+  width: 159.2rem;
+}
+
+.c-table-row {
+  background-color: #0f171e;
+}
+
+.c-table-row__header {
+  background-color: #00a8e1;
+}
+
+.c-table-row__bis {
+  background-color: #4e5b69;
+}
+
+.c-table-th {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 1.6rem 0px;
+}
+
+.c-table-td {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  border: 0.2rem solid white;
 }
 
 .c-btn-text {
   font-size: 2.4rem;
-  color: #00A8E1;
+  color: #00a8e1;
 }
 
 .c-btn-icon {
@@ -11663,8 +11715,8 @@ nav {
 }
 
 .page-link {
-  color: #00A8E1;
-  background-color: #0F171E;
+  color: #00a8e1;
+  background-color: #0f171e;
   border: 0;
   border-radius: 0;
   font-size: 3rem;
@@ -11676,8 +11728,8 @@ nav {
 
 .page-link:hover {
   color: white;
-  background-color: #0F171E;
-  border-color: #0F171E;
+  background-color: #0f171e;
+  border-color: #0f171e;
 }
 
 .c-rotade {
@@ -11687,8 +11739,8 @@ nav {
 
 .page-item.active .page-link {
   color: white;
-  background-color: #0F171E;
-  border-color: #0F171E;
+  background-color: #0f171e;
+  border-color: #0f171e;
 }
 
 /*movie form*/
@@ -11760,7 +11812,7 @@ nav {
 .c-form1 {
   max-width: 95.1rem;
   min-height: 134.2rem;
-  background-color: #1A232E;
+  background-color: #1a232e;
   border-radius: 1.6rem;
 }
 
@@ -11779,7 +11831,7 @@ nav {
 
 .c-form-input {
   font-size: 3rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   width: 39.5rem;
   height: 6.5rem;
   border: 0;
@@ -11787,70 +11839,70 @@ nav {
 }
 
 .c-form-input::-webkit-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input:-ms-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input::-ms-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input::placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input_long {
   font-size: 3rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   width: 100%;
   height: 6.5rem;
 }
 
 .c-form-input_long::-webkit-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input_long:-ms-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input_long::-ms-input-placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-input_long::placeholder {
-  color: #00ADE7;
+  color: #00ade7;
 }
 
 .c-form-select {
   font-size: 3rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   width: 39.5rem;
   height: 6.5rem;
-  color: #00ADE7;
+  color: #00ade7;
   border-radius: 0;
   border: 0;
 }
 
 .c-form-select-long {
   font-size: 3rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   width: 100%;
   height: 6.5rem;
-  color: #00ADE7;
+  color: #00ade7;
   border-radius: 0;
   border: 0;
 }
 
 .c-form-select-short {
   font-size: 3rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   width: 21.2rem;
   height: 6.5rem;
-  color: #00ADE7;
+  color: #00ade7;
   border-radius: 0;
   border: 0;
   text-align: center;
@@ -11859,25 +11911,25 @@ nav {
 .c-form__textarea {
   width: 100%;
   height: 27.4rem;
-  background-color: #0F171E;
+  background-color: #0f171e;
   border: 0;
   border-radius: 0;
-  color: #00A8E1;
+  color: #00a8e1;
   font-size: 3rem;
 }
 
 .c-form__button {
   width: 35.1rem;
   height: 10rem;
-  background-color: #0F171E;
-  color: #00A8E1;
+  background-color: #0f171e;
+  color: #00a8e1;
 }
 
 .c-form__button2 {
   width: 35.1rem;
   height: 10rem;
-  background-color: #00A8E1;
-  color: #0F171E;
+  background-color: #00a8e1;
+  color: #0f171e;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -11887,13 +11939,13 @@ nav {
 .c-form__button--submit {
   width: 18.6rem;
   height: 5.6rem;
-  background-color: #0F171E;
-  color: #00A8E1;
+  background-color: #0f171e;
+  color: #00a8e1;
   border: 0;
 }
 
 .c-form__button--submit:hover {
-  background-color: #0F171E;
+  background-color: #0f171e;
 }
 
 /*user managment detail*/
@@ -11931,7 +11983,7 @@ nav {
   top: 0;
   left: 9px;
   line-height: 2.4;
-  color: #00ADE7;
+  color: #00ade7;
   cursor: text;
   pointer-events: none;
 }
@@ -11943,7 +11995,7 @@ nav {
 .c-form__input {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  background-color: #0F171E;
+  background-color: #0f171e;
   border: 0;
 }
 
@@ -11952,8 +12004,8 @@ nav {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: white;
-  background-color: #0F171E;
-  border: 1px solid #00ADE7;
+  background-color: #0f171e;
+  border: 1px solid #00ade7;
 }
 
 .c-form__input::-webkit-input-placeholder {
@@ -12000,7 +12052,7 @@ nav {
 }
 
 .c-bg__form {
-  background-color: #1A232E;
+  background-color: #1a232e;
   padding: 3rem;
 }
 
