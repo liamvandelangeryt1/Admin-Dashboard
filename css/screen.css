@@ -11691,6 +11691,12 @@ nav {
       flex-wrap: wrap;
 }
 
+@media (max-width: 991.98px) {
+  .c-custom-rows {
+    margin-left: 0px;
+  }
+}
+
 .c-custom-rows2 {
   margin-left: 240px;
   min-height: 106px;
