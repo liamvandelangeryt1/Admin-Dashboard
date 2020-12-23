@@ -1,46 +1,43 @@
-.c-logo{
-    padding: 30px 50px;
+.c-logo {
+  padding: 30px 50px;
 }
 
-.c-icon{
-    width: 32px;
-    height:32px;
-    &-header{
-        display: inline;
-        width: 22px;
-        height: 22px;
-        fill:$color-light-blue;
-        padding-bottom: 0.5rem;
-        &:hover{
-            fill: $color-hover-blue;
-        }
-      
+.c-icon {
+  width: 32px;
+  height: 32px;
+  &-header {
+    display: inline;
+    width: 22px;
+    height: 22px;
+    fill: $color-light-blue;
+    padding-bottom: 0.5rem;
+    &:hover {
+      fill: $color-hover-blue;
     }
-  
-     
-    
+  }
 }
 
-.c-admin{
-    margin-top: 15rem;
-    padding-left: 24px;
-    &-icon{   width: 32px;
-        height: 32px;
-        display: inline;
-        fill: $white;
-    &-logout{
-        
-        width: 30px;
-        height: 30px;
-        fill:#4B935B;
-    }}
-        &-img{
-            border-radius: 100%;
-            width: 80px;
-            height: 80px;
-            border-color: $color-light-blue;
-            border-image-width: 5px;
-            border-style: solid;
-            margin-bottom: 2.4rem;
-        }
+.c-admin {
+  margin-top: 7rem;
+  padding-left: 24px;
+  &-icon {
+    width: 32px;
+    height: 32px;
+    display: inline;
+    fill: $white;
+    &-logout {
+      width: 30px;
+      height: 30px;
+      fill: #4b935b;
+    }
+  }
+  &-img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border-color: $color-light-blue;
+    border-image-width: 5px;
+    border-style: solid;
+    margin-bottom: 2.4rem;
+  }
 }

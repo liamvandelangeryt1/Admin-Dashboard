@@ -11068,7 +11068,7 @@ button > a {
 
 nav {
   width: 24rem;
-  height: calc(100vh - 2rem);
+  height: 100vh;
   background-color: #1a232e;
   position: fixed;
   z-index: 1;
@@ -11100,7 +11100,7 @@ nav {
 }
 
 .c-admin {
-  margin-top: 15rem;
+  margin-top: 7rem;
   padding-left: 24px;
 }
 
@@ -11114,7 +11114,7 @@ nav {
 .c-admin-icon-logout {
   width: 30px;
   height: 30px;
-  fill: #4B935B;
+  fill: #4b935b;
 }
 
 .c-admin-img {
@@ -12525,9 +12525,11 @@ nav {
     display: -ms-flexbox;
     display: flex;
     margin-top: 16rem;
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    place-content: center;
   }
 }
 
