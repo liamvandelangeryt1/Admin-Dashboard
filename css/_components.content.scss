@@ -13,10 +13,33 @@
   overflow: hidden;
 }
 
+
 .c-movie-item {
-  display: block;
-  position: relative;
-  margin-bottom: 30px;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    .c-icon{
+      
+        visibility: hidden;
+    }
+    &:hover .c-icon{
+        visibility: visible;
+       position: absolute;
+       top:0;
+       padding-top: 20%;
+        background-color:rgba($color-bg, $alpha: 0.75) ;
+        width: 100%;
+        height: 75%;
+
+        &-1{
+            fill: seagreen;
+        }
+        &-2{
+            fill: $red;
+        }
+        
+    }
+ 
 }
 
 .c-custom-rows {

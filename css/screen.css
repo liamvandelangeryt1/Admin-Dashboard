@@ -11683,6 +11683,28 @@ nav {
   margin-bottom: 30px;
 }
 
+.c-movie-item .c-icon {
+  visibility: hidden;
+}
+
+.c-movie-item:hover .c-icon {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  padding-top: 20%;
+  background-color: rgba(15, 23, 30, 0.75);
+  width: 100%;
+  height: 75%;
+}
+
+.c-movie-item:hover .c-icon-1 {
+  fill: seagreen;
+}
+
+.c-movie-item:hover .c-icon-2 {
+  fill: #dc3545;
+}
+
 .c-custom-rows {
   margin-left: 240px;
   margin-top: 183px;
