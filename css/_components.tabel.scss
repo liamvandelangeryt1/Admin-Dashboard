@@ -1,51 +1,55 @@
-.c-table{
-    position: absolute;
-    left: 24rem;
-    top: 11.2rem;
+.c-table {
+  position: absolute;
+  left: 24rem;
+  top: 11.2rem;
+  width: 168rem;
+  height: 96.8rem;
+
+  @include media-breakpoint-down(md) {
+    position: relative;
     width: 168rem;
     height: 96.8rem;
+    left: 0rem;
+    top: 0rem;
+  }
 
-    &__h2{
-        position: relative;
-        top: 5.4rem;
-        text-align: center;
+  &__h2 {
+    position: relative;
+    top: 5.4rem;
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 8rem;
+    width: 159.2rem;
+  }
+
+  &-row {
+    background-color: $color-bg;
+    &__header {
+      background-color: $color-light-blue;
     }
-
-    &__container{
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        top: 8rem;
-        width: 159.2rem;
-        
-
+    &__bis {
+      background-color: $color-hover-content;
     }
+  }
 
-    &-row{
-        background-color: $color-bg;
-        &__header{
-            background-color: $color-light-blue;
-            
-        }
-        &__bis{
-            background-color: $color-hover-content;
-        }
-    }
+  &-th {
+    color: $color-white;
+    font-size: 2.8rem;
+    font-weight: $font-semibold;
+    padding: $padding-16 0px;
+  }
 
-    &-th{
-        color: $color-white;
-        font-size: 2.8rem;
-        font-weight: $font-semibold;
-        padding: $padding-16 0px;
-    }
-
-    &-td{
-        color: $color-white;
-        font-size: 2rem;
-        font-weight: $font-medium;
-        padding: $padding-8;
-        border: 0.2rem solid $color-white;
-    }
-    
+  &-td {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: $font-medium;
+    padding: $padding-8;
+    border: 0.2rem solid $color-white;
+  }
 }

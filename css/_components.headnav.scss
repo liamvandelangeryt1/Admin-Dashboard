@@ -17,6 +17,20 @@
     padding: 2rem 4rem;
   }
 
+  a {
+    padding-left: 1rem;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 1rem;
+      font-size: 1.4rem !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 0.5rem;
+      font-size: 1.2rem !important;
+    }
+  }
+
   &__toggle {
     display: none;
     width: 4rem;
@@ -79,12 +93,22 @@
   }
 
   h1 {
+    font-size: 5.6rem;
+
+    width: 60%;
+    @include media-breakpoint-down(xl) {
+      font-size: 4rem;
+      width: 51%;
+    }
+
     @include media-breakpoint-down(lg) {
-      font-size: 4.8rem;
+      font-size: 3rem;
     }
 
     @include media-breakpoint-down(md) {
       font-size: 3.6rem;
+
+      width: 20%;
     }
 
     @include media-breakpoint-down(sm) {
@@ -116,6 +140,8 @@
 
   &--buttons {
     display: block;
+
+    padding-right: 6rem;
     @include media-breakpoint-down(md) {
       display: none;
     }
@@ -187,4 +213,26 @@
 
 #active {
   background-color: $color-bg;
+}
+
+.c-buttons-sm {
+  display: none;
+  width: 100%;
+
+  button {
+    margin: 0rem 1rem 1rem 1rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    margin-top: 16rem;
+
+    justify-content: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
 }
