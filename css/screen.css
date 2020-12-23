@@ -11570,6 +11570,16 @@ nav {
   height: 96.8rem;
 }
 
+@media (max-width: 991.98px) {
+  .c-table {
+    position: relative;
+    width: 168rem;
+    height: 96.8rem;
+    left: 0rem;
+    top: 0rem;
+  }
+}
+
 .c-table__h2 {
   position: relative;
   top: 5.4rem;
@@ -12162,6 +12172,19 @@ nav {
   }
 }
 
+.c-headnav a {
+  padding-left: 1rem;
+  padding-left: 1rem;
+  font-size: 1.4rem !important;
+}
+
+@media (max-width: 1199.98px) {
+  .c-headnav a {
+    padding-left: 0.5rem;
+    font-size: 1.2rem !important;
+  }
+}
+
 .c-headnav__toggle {
   display: none;
   width: 4rem;
@@ -12246,15 +12269,23 @@ nav {
   }
 }
 
+.c-headnav h1 {
+  font-size: 5.6rem;
+  width: 60%;
+  font-size: 4rem;
+  width: 51%;
+}
+
 @media (max-width: 1199.98px) {
   .c-headnav h1 {
-    font-size: 4.8rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 991.98px) {
   .c-headnav h1 {
     font-size: 3.6rem;
+    width: 20%;
   }
 }
 
@@ -12296,6 +12327,7 @@ nav {
 
 .c-headnav--buttons {
   display: block;
+  padding-right: 6rem;
 }
 
 @media (max-width: 991.98px) {
@@ -12386,5 +12418,36 @@ nav {
 
 #active {
   background-color: #0f171e;
+}
+
+.c-buttons-sm {
+  display: none;
+  width: 100%;
+}
+
+.c-buttons-sm button {
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .c-buttons-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 16rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-buttons-sm {
+    display: block;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=screen.css.map */
