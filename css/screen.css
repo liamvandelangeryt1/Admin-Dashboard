@@ -10029,7 +10029,15 @@ nav {
   height: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991.98px) {
+  .c-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
   .c-row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -10093,7 +10101,17 @@ nav {
   color: black;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 992px) {
+  .c-statstop__item {
+    background-color: white;
+    width: 45%;
+    height: 216.31px;
+    margin-bottom: 5%;
+    border-radius: 4px 4px 0px 0px;
+  }
+}
+
+@media (max-width: 991.98px) {
   .c-statstop__item {
     background-color: white;
     width: 45%;
@@ -10144,7 +10162,7 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991.98px) {
   .c-statsbot__item {
     margin: 0;
     width: 94%;
@@ -10157,17 +10175,20 @@ nav {
     border-radius: 4px 4px 0px 0px;
     background-color: white;
   }
-  .c-statsbot__text {
-    color: black;
-    font-size: 23px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .c-statsbot__item {
+    margin: 0;
+    width: 94%;
+    border-radius: 4px 4px 0px 0px;
+    background-color: white;
   }
-  .c-statsbot__text--left {
-    margin: 20px 0 55px 20px;
-  }
-  .c-statsbot__text--pie {
-    text-align: center;
+  .c-statsbot__item--left {
+    margin-top: 5%;
+    width: 94%;
+    border-radius: 4px 4px 0px 0px;
+    background-color: white;
   }
 }
 
@@ -10178,25 +10199,6 @@ nav {
     height: 533px;
     border-radius: 4px 4px 0px 0px;
     background-color: white;
-  }
-  .c-statsbot__item--left {
-    margin-top: 67px;
-    width: 25%;
-    height: 533px;
-    border-radius: 4px 4px 0px 0px;
-    background-color: white;
-  }
-  .c-statsbot__text {
-    color: black;
-    font-size: 23px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-  }
-  .c-statsbot__text--left {
-    margin: 20px 0 55px 20px;
-  }
-  .c-statsbot__text--pie {
-    text-align: center;
   }
 }
 

@@ -4,7 +4,13 @@
   margin-left: $padding-nav;
   height: 100%;
 
-  @media (max-width: 1200px) {
+  @include media-breakpoint-down(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  @media (max-width: 1200px) and (min-width: 992px) {
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -67,7 +73,17 @@
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1200px) and (min-width: 992px) {
+    &__item {
+      background-color: white;
+      width: 45%;
+      height: 216.31px;
+      margin-bottom: 5%;
+      border-radius: 4px 4px 0px 0px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     &__item {
       background-color: white;
       width: 45%;
@@ -120,7 +136,7 @@
     }
   }
 
-  @media (max-width: 1200px) {
+  @include media-breakpoint-down(md) {
     &__item {
       margin: 0;
       width: 94%;
@@ -134,19 +150,20 @@
         background-color: white;
       }
     }
+  }
 
-    &__text {
-      color: black;
-      font-size: 23px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
+  @media (max-width: 1200px) and (min-width: 992px) {
+    &__item {
+      margin: 0;
+      width: 94%;
+      border-radius: 4px 4px 0px 0px;
+      background-color: white;
 
       &--left {
-        margin: 20px 0 55px 20px;
-      }
-
-      &--pie {
-        text-align: center;
+        margin-top: 5%;
+        width: 94%;
+        border-radius: 4px 4px 0px 0px;
+        background-color: white;
       }
     }
   }
@@ -158,29 +175,6 @@
       height: 533px;
       border-radius: 4px 4px 0px 0px;
       background-color: white;
-
-      &--left {
-        margin-top: 67px;
-        width: 25%;
-        height: 533px;
-        border-radius: 4px 4px 0px 0px;
-        background-color: white;
-      }
-    }
-
-    &__text {
-      color: black;
-      font-size: 23px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-
-      &--left {
-        margin: 20px 0 55px 20px;
-      }
-
-      &--pie {
-        text-align: center;
-      }
     }
   }
 }
@@ -190,9 +184,6 @@
   max-height: 216.31px;
   width: 100%;
   top: -84px;
-
-  @media (max-width: 1844px) {
-  }
 }
 
 .chart-containercomb {
