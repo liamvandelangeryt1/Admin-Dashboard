@@ -11204,8 +11204,12 @@ nav {
 
 @media (max-width: 991.98px) {
   .c-row {
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
   }
 }
@@ -12171,6 +12175,21 @@ nav {
   position: relative;
   margin: auto;
   margin-bottom: 3rem;
+}
+
+.c-settings {
+  margin-top: 15rem;
+  margin-left: 24rem;
+}
+
+.c-settings > div {
+  color: white;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.c-settings > div > div {
+  margin-top: 5rem;
 }
 
 .c-headnav {
