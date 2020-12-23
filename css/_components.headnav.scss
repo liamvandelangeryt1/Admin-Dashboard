@@ -136,7 +136,7 @@
 
   @include media-breakpoint-down(md) {
     display: block;
-    transform: translateY(-180rem);
+    transform: translateY(-470rem);
     transition: transform 0.5s ease;
     position: fixed;
   }

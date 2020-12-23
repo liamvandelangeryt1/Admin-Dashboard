@@ -10998,7 +10998,7 @@ a :hover {
 }
 
 h1 {
-  font-size: 5.8rem;
+  font-size: 6.4rem;
   color: white;
   font-weight: 100 !important;
 }
@@ -11965,6 +11965,107 @@ nav {
           filter: invert(1);
 }
 
+.c-pay {
+  margin-top: 3rem;
+}
+
+.c-pay__content {
+  background-color: #1a232e;
+}
+
+.c-pay__margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.c-pay__line {
+  background-color: #00ade7;
+}
+
+.c-pay__img {
+  width: 60%;
+  height: auto;
+}
+
+.c-pay__mastercardtext {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.c-pay__mastercardtext--2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.c-pay__mastercardtext--2plan {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.c-pay__mastercardtext--date {
+  color: #dee2e6;
+  font-size: 1.2rem;
+}
+
+.c-pay__mastercardtext--money {
+  color: #00ade7;
+  font-size: 1.6rem;
+}
+
+.c-pay__mastercardtext--margin {
+  margin: 0;
+}
+
+.c-pay__contentpay {
+  margin: auto;
+}
+
+.c-pay__button {
+  height: 3rem;
+}
+
+.c-pay__button--container {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.c-pay__button--method {
+  width: 60%;
+  height: 20%;
+  font-size: 1rem;
+}
+
+.c-pay__button--extra {
+  width: 100%;
+  height: auto;
+  font-size: 1.4rem;
+}
+
+.pb-0__pay {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.o-circel2 {
+  height: 145px;
+  width: 145px;
+  background-image: url("../img/user-detail/atikh-bana-_KaMTEmJnxY-unsplash.jpg");
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  margin-bottom: 3rem;
+}
 
 .c-headnav {
   z-index: 800;
@@ -12155,8 +12256,8 @@ nav {
 @media (max-width: 991.98px) {
   .c-hamburgernav {
     display: block;
-    -webkit-transform: translateY(-180rem);
-            transform: translateY(-180rem);
+    -webkit-transform: translateY(-470rem);
+            transform: translateY(-470rem);
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -12219,111 +12320,5 @@ nav {
 
 #active {
   background-color: #0f171e;
-}
-
-.c-pay {
-  margin-top: 3rem;
-}
-
-.c-pay__content {
-  background-color: #1A232E;
-}
-
-.c-pay__margin {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.c-pay__line {
-  background-color: #00ADE7;
-}
-
-.c-pay__img {
-  width: 60%;
-  height: auto;
-}
-
-.c-pay__mastercardtext {
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.c-pay__mastercardtext--2 {
-  color: white;
-  font-size: 2rem;
-}
-
-.c-pay__mastercardtext--2plan {
-  color: white;
-  font-size: 1.6rem;
-}
-
-.c-pay__mastercardtext--date {
-  color: #dee2e6;
-  font-size: 1.2rem;
-}
-
-.c-pay__mastercardtext--money {
-  color: #00ADE7;
-  font-size: 1.6rem;
-}
-
-.c-pay__mastercardtext--margin {
-  margin: 0;
-}
-
-.c-pay__contentpay {
-  margin: auto;
-}
-
-.c-pay__button {
-  height: 3rem;
-}
-
-.c-pay__button--container {
-  width: 90%;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.c-pay__button--method {
-  width: 60%;
-  height: 20%;
-  font-size: 1rem;
-}
-
-.c-pay__button--extra {
-  width: 100%;
-  height: auto;
-  font-size: 1.4rem;
-}
-
-.pb-0__pay {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  margin: auto;
-  padding: 3rem;
-  padding-bottom: 0;
-}
-
-.o-circel2 {
-  height: 145px;
-  width: 145px;
-  background-image: url("../img/user-detail/atikh-bana-_KaMTEmJnxY-unsplash.jpg");
-  border-radius: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: auto;
-  margin-bottom: 3rem;
-}
-
-.c-headnav .container {
-  @med width: 100%;
 }
 /*# sourceMappingURL=screen.css.map */
