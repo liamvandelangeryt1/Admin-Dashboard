@@ -80,7 +80,7 @@ button {
 
 nav {
   width: 24rem;
-  height: 100%;
+  height: calc(100vh - 2rem);
   background-color: $color-aside;
   position: fixed;
   z-index: 1;

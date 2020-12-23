@@ -11062,7 +11062,7 @@ button > a {
 
 nav {
   width: 24rem;
-  height: 100%;
+  height: calc(100vh - 2rem);
   background-color: #1a232e;
   position: fixed;
   z-index: 1;
@@ -11204,8 +11204,12 @@ nav {
 
 @media (max-width: 991.98px) {
   .c-row {
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
   }
 }
