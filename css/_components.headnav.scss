@@ -227,7 +227,10 @@
     display: flex;
     margin-top: 16rem;
 
+    text-align: center;
     justify-content: center;
+
+    place-content: center;
   }
 
   @include media-breakpoint-down(sm) {

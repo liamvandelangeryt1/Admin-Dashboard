@@ -17,6 +17,25 @@
   display: block;
   position: relative;
   margin-bottom: 30px;
+  .c-icon {
+    visibility: hidden;
+  }
+  &:hover .c-icon {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    padding-top: 20%;
+    background-color: rgba($color-bg, $alpha: 0.75);
+    width: 100%;
+    height: 75%;
+
+    &-1 {
+      fill: seagreen;
+    }
+    &-2 {
+      fill: $red;
+    }
+  }
 }
 
 .c-custom-rows {
@@ -29,6 +48,7 @@
 
   @include media-breakpoint-down(md) {
     margin-left: 0px;
+    margin-top: 8rem;
   }
 }
 
@@ -470,26 +490,21 @@
   margin-bottom: 3rem;
 }
 
-
-.c-settings{
-    > div{
-      
-       
-        color:white;
-        padding-bottom:5rem;
-        padding-top: 5rem;
-      >div {
-          margin-top:5rem;
-
-      }
+.c-settings {
+  > div {
+    color: white;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    > div {
+      margin-top: 5rem;
     }
-   
-    margin-top:15rem;
-    margin-left:24rem;
+  }
 
-    @include media-breakpoint-down(md){
-        margin-left: auto;
-        margin-right: auto;
-    }
+  margin-top: 15rem;
+  margin-left: 24rem;
+
+  @include media-breakpoint-down(md) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-

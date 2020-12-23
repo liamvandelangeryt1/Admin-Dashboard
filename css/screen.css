@@ -9910,7 +9910,7 @@ button > a {
 
 nav {
   width: 24rem;
-  height: calc(100vh - 2rem);
+  height: 100vh;
   background-color: #1a232e;
   position: fixed;
   z-index: 1;
@@ -9942,7 +9942,7 @@ nav {
 }
 
 .c-admin {
-  margin-top: 15rem;
+  margin-top: 6rem;
   padding-left: 24px;
 }
 
@@ -9956,7 +9956,7 @@ nav {
 .c-admin-icon-logout {
   width: 30px;
   height: 30px;
-  fill: #4B935B;
+  fill: #4b935b;
 }
 
 .c-admin-img {
@@ -10527,6 +10527,28 @@ main {
   margin-bottom: 30px;
 }
 
+.c-movie-item .c-icon {
+  visibility: hidden;
+}
+
+.c-movie-item:hover .c-icon {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  padding-top: 20%;
+  background-color: rgba(15, 23, 30, 0.75);
+  width: 100%;
+  height: 75%;
+}
+
+.c-movie-item:hover .c-icon-1 {
+  fill: seagreen;
+}
+
+.c-movie-item:hover .c-icon-2 {
+  fill: #dc3545;
+}
+
 .c-custom-rows {
   margin-left: 240px;
   margin-top: 183px;
@@ -10539,6 +10561,7 @@ main {
 @media (max-width: 991.98px) {
   .c-custom-rows {
     margin-left: 0px;
+    margin-top: 8rem;
   }
 }
 
@@ -11244,7 +11267,6 @@ main {
   .c-buttons-sm {
     display: flex;
     margin-top: 16rem;
-    justify-content: center;
   }
 }
 
@@ -11258,5 +11280,6 @@ main {
 
 .card {
   text-align: center;
+  color: black;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -99,7 +99,7 @@
         </li>
         <li class="">
           <img src="img/icons/money-check-alt-solid.svg" class="c-icon img-fluid" />
-          <a href="content.html">REVENUE</a>
+          <a href="#">REVENUE</a>
         </li>
       </ul>
       <div class="c-admin">
@@ -128,7 +128,7 @@
 
     <main class="c-settings">
       <div class="container">
-        <div class="row">
+        <div class="row mb-5">
           <h1 class="col-12 text-center">Amount of profiles per account</h1>
           <div class="col-md-12 col-lg-6 text-center">
             <h4>Subscribed Users</h4>
@@ -217,17 +217,21 @@
           </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
           <h1 class="col-12 text-center">Subscription Settings</h1>
-          <div class="col-12 mt-5 text-center">
-            <h4>Subscribed Users</h4>
+          <div class="col-12 mt-5 text-center ">
+            <h4 class="col-12">Subscribed Users</h4>
+            <div class="row justify-content-around mt-5">
             <button class=" mb-5 col-3" type="button" data-toggle="collapse" data-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapse1">Bronze</button>
             <button class="mb-5 col-3" type="button" data-toggle="collapse" data-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">Silver</button>
             <button class=" mb-5 col-3" type="button" data-toggle="collapse" data-target="#multiCollapse3" aria-expanded="false" aria-controls="multiCollapse3">Gold</button>
-
-            <div class="col mb-5">
+          </div>
+            <div class="col-12 mb-5">
               <div class="collapse multi-collapse" id="multiCollapse1">
                 <div class="card card-body">
+
+                  <h5>Bronze Tier</h5>
+
                   <form>
                     <div class="form-group">
                       <label class="control-label" for="Quality">Quality</label>
@@ -243,7 +247,7 @@
                       </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group ">
                       <label class="control-label" for="downloads">Amount of downloads</label>
                       <div class=" ">
                         <select id="downloads" name="downloads" class="form-control">
@@ -255,14 +259,23 @@
                         </select>
                       </div>
                     </div>
+
+                    <div class="form-group">
+                      <label class="control-label" for=""></label>
+                      <div class="">
+                        <button id="" name="" class="">Submit</button>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
               </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-12 mb-5">
               <div class="collapse multi-collapse" id="multiCollapse2">
                 <div class="card card-body">
+                  <h5>Silver Tier</h5>
                   <form>
                     <div class="form-group">
                       <label class="control-label" for="Quality">Quality</label>
@@ -290,15 +303,24 @@
                         </select>
                       </div>
                     </div>
+
+                    <div class="form-group">
+                      <label class="control-label" for=""></label>
+                      <div class="">
+                        <button id="" name="" class="">Submit</button>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
               </div>
             </div>
 
 
-          <div class="col mb-5">
+          <div class="col-12 mb-5">
             <div class="collapse multi-collapse" id="multiCollapse3">
               <div class="card card-body">
+                <h5>Gold Tier</h5>
                 <form>
                   <div class="form-group">
                     <label class="control-label" for="Quality">Quality</label>
@@ -326,12 +348,95 @@
                       </select>
                     </div>
                   </div>
+                  
+                  <div class="form-group">
+                    <label class="control-label" for=""></label>
+                    <div class="">
+                      <button id="" name="" class="">Submit</button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
           </div>         
          </div>
         </div>
+
+
+        <div class="row">
+          <h1 class="col-12 text-center">Add Promotion</h1>
+          <div class="col-md-12 col-lg-6 col-xl-6 text-center">
+            <h4>Subscribed Users</h4>
+            <form>
+              <div class="form-group">
+                <label class=" control-label" for="promoname">Promotion Name</label>  
+                <div class="">
+                <input id="promoname" name="promoname" type="text" placeholder="Promotion name" class="form-control input-md">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class=" control-label" for="promoprice">Promotion Price</label>  
+                <div class="">
+                <input id="promoprice" name="promoprice" type="number" placeholder="Promotion Price" class="form-control input-md">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class=" control-label" for="promotime">Promotion Duration</label>  
+                <div class="">
+                <input id="promotime" name="promotime" type="text" placeholder="Promotion Duration" class="form-control input-md">
+                
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for=""></label>
+                <div class="">
+                  <button id="" name="" class="">Submit</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="col-md-12 col-lg-6 col-xl-6 text-center">
+            <h4>Trial Users</h4>
+            <form>
+              <div class="form-group">
+                <label class=" control-label" for="promoname">Promotion Name</label>  
+                <div class="">
+                <input id="promoname" name="promoname" type="text" placeholder="Promotion name" class="form-control input-md">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class=" control-label" for="promoprice">Promotion Price</label>  
+                <div class="">
+                <input id="promoprice" name="promoprice" type="number" placeholder="Promotion Price" class="form-control input-md">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class=" control-label" for="promotime">Promotion Duration</label>  
+                <div class="">
+                <input id="promotime" name="promotime" type="text" placeholder="Promotion Duration" class="form-control input-md">
+                
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for=""></label>
+                <div class="">
+                  <button id="" name="" class="">Submit</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          
+        </div>
+       
       </div>
     </main>
     <!-- Optional JavaScript -->
@@ -342,3 +447,5 @@
     <script src="https://kit.fontawesome.com/374c0650f6.js" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
