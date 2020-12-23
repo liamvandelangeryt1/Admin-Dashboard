@@ -1,4 +1,10 @@
 .c-sidenav {
+  overflow-y: hidden;
+  display: block;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
   z-index: 1000;
   ul {
     padding-inline-start: 0;
@@ -17,13 +23,33 @@
       margin-top: 5px;
       font-size: 1.8rem;
       font-weight: $font-bold;
+      color: $color-white;
 
+      &:hover {
+        background-color: $color-bg !important;
+        color: $color-aside-normal !important;
+        transition: all 0.3s ease;
+      }
+
+      &:active {
+        background-color: $color-bg !important;
+        color: $color-white !important;
+        transition: all 0.3s ease;
+      }
+
+      a {
+        padding-left: 5rem;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $color-aside-normal !important;
       }
     }
-    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  
   }
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 #active {
   background-color: $color-bg;
 }
-
