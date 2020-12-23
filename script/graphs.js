@@ -261,12 +261,6 @@ const verwerkenGraph3 = function(jsonObject) {
 
 
 
-function removeData () {
-  alert('ja')
-  document.getElementById(`myChart6`).classList.add('kut')
-}
-
-
 //deze regels worden eerst uitgevoerd, alles hangt start vanaf hier.
 document.addEventListener('DOMContentLoaded', function() {
   console.info('DOM geladen');
