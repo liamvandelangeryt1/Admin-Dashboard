@@ -18,6 +18,7 @@ fetch('./json/data.json')
     verwerkenGraph(jsonObject);
     verwerkenGraph2(jsonObject);
     verwerkenGraph3(jsonObject);
+
     
     
   })
@@ -53,9 +54,21 @@ const verwerkenGraph = function(jsonObject) {
         }]
     },
     options: {
+
+      
       legend: {
         display: false //This will do the task
      },
+
+     layout: {
+      padding: {
+          left: -10,
+          right: 0,
+          top: 0,
+          bottom: 0
+      }
+    },
+     responsive:true,
      maintainAspectRatio: false,
      
       scales: {
@@ -82,6 +95,8 @@ const verwerkenGraph = function(jsonObject) {
 }}
 
 
+
+
 const verwerkenGraph2 = function(jsonObject) {
 
   const object = jsonObject;
@@ -92,6 +107,10 @@ const verwerkenGraph2 = function(jsonObject) {
     var BackgroundColor = object.BackgroundColor[4]
     var BorderColor = object.BorderColor[4]
     console.log(graph)
+  
+    
+    
+     
      
   var ctx = document.getElementById(`myChart4`).getContext('2d');
   var myChart = new Chart(ctx, {
@@ -99,7 +118,6 @@ const verwerkenGraph2 = function(jsonObject) {
     data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
         datasets: [
-        
         {
             label: '# of Votes',
             data: object.Graphs[0], 
@@ -168,6 +186,9 @@ const verwerkenGraph2 = function(jsonObject) {
 
 }
 
+
+
+
 const verwerkenGraph3 = function(jsonObject) {
 
   const object = jsonObject;
@@ -200,6 +221,14 @@ const verwerkenGraph3 = function(jsonObject) {
     legend: {
       display: false //This will do the task
    },
+   layout: {
+    padding: {
+        left: -10,
+        right: 0,
+        top: 0,
+        bottom: 0
+    }
+  },
    maintainAspectRatio: false,
    
    
@@ -226,6 +255,15 @@ const verwerkenGraph3 = function(jsonObject) {
 });
 
 
+}
+
+
+
+
+
+function removeData () {
+  alert('ja')
+  document.getElementById(`myChart6`).classList.add('kut')
 }
 
 
