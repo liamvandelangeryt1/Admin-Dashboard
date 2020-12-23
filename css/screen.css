@@ -11100,7 +11100,7 @@ nav {
 }
 
 .c-admin {
-  margin-top: 7rem;
+  margin-top: 6rem;
   padding-left: 24px;
 }
 
@@ -11722,6 +11722,7 @@ nav {
 @media (max-width: 991.98px) {
   .c-custom-rows {
     margin-left: 0px;
+    margin-top: 8rem;
   }
 }
 
