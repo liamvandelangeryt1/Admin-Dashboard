@@ -1,5 +1,4 @@
 .c-sidenav {
-  overflow: hidden;
   z-index: 1000;
   ul {
     padding-inline-start: 0;
@@ -18,17 +17,7 @@
       margin-top: 5px;
       font-size: 1.8rem;
       font-weight: $font-bold;
-      color: white;
-      a {
-        padding-left: 5rem;
-      }
-      &:hover {
-        background-color: $color-bg;
-      }
 
-      a:hover {
-        text-decoration: none;
-        color: white;
       }
     }
   }
@@ -39,14 +28,3 @@
   background-color: $color-bg;
 }
 
-nav {
-  width: 24rem;
-  height: 100%;
-  background-color: $color-aside;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
