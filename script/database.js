@@ -28,7 +28,7 @@ const laadJsonData = function() {
 
   const verwerkenUsers = function(jsonObject) {
     const objects = jsonObject.users;
-console.log(objects)
+    console.log(objects)
 
 
     let html_screen = "";
@@ -59,7 +59,7 @@ console.log(objects)
  
         
         html_screen += `
-        <tr id= "filter" class="c-table-row">
+        <tr id= "filter" class="c-table-row c-table-row__reeks">
         <td class="c-table-td">${id}</th>
         <td class="c-table-td">${firstName} ${lastName}</th>
         <td class="c-table-td">${email}</th>
@@ -82,7 +82,7 @@ console.log(objects)
 
   const verwerkUser = function(jsonObject) {
     const objects = jsonObject.users;
-console.log(objects)
+    console.log(objects)
 
 const id= object.id;
 const firstName =object.firstName;
