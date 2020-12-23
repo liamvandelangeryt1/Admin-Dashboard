@@ -12183,6 +12183,21 @@ nav {
   margin-bottom: 3rem;
 }
 
+.c-settings {
+  margin-top: 15rem;
+  margin-left: 24rem;
+}
+
+.c-settings > div {
+  color: white;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.c-settings > div > div {
+  margin-top: 5rem;
+}
+
 .c-headnav {
   z-index: 800;
   background-color: #1a232e;
