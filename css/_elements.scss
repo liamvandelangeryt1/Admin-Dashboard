@@ -21,6 +21,9 @@ h1 {
   font-size: 6.4rem;
   color: $color-white;
   font-weight: $font-thin !important;
+  @include media-breakpoint-down(sm){
+      font-size: 4rem;
+  }
 }
 
 h2 {
