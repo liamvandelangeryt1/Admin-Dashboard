@@ -12053,6 +12053,26 @@ main {
   text-align: center;
 }
 
+.c-form2 {
+  max-width: 95.1rem;
+  min-height: 111.8rem;
+  background-color: #1a232e;
+  border-radius: 1.6rem;
+}
+
+.c-form2-padding {
+  padding: 6.5rem;
+}
+
+.c-form2-margin {
+  margin-bottom: 3.4rem;
+}
+
+.c-form2-titel {
+  font-size: 40px;
+  text-align: center;
+}
+
 .c-h-size {
   font-size: 4.2rem;
   color: white;
