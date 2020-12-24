@@ -190,6 +190,11 @@
   &-margin {
     margin-bottom: 3.4rem;
   }
+
+  &-titel {
+    font-size: 40px;
+    text-align: center;
+  }
 }
 
 .c-h-size {
@@ -267,6 +272,10 @@
   height: 10rem;
   background-color: $color-bg;
   color: $color-light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 
   &2 {
     width: 35.1rem;
@@ -276,6 +285,42 @@
     text-align: center;
     align-items: center;
   }
+}
+
+
+.c-spacing{
+  padding: 0;
+  @include media-breakpoint-down(md) {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: 50px;
+  }
+}
+
+.c-margin{
+  margin-bottom: 81px;
+}
+.c-form__button2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.c-form-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.c-form-svg {
+  width: 52.664px;
+  height: 36.865px;
 }
 
 .c-form__button--submit {
