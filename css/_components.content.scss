@@ -200,6 +200,27 @@
     }
 }
 
+.c-form2 {
+    max-width: 95.1rem;
+    min-height: 111.8rem;
+    background-color: $color-aside;
+    border-radius: 1.6rem;
+
+    &-padding {
+        padding: 6.5rem;
+    }
+
+    &-margin {
+        margin-bottom: 3.4rem;
+    }
+
+    &-titel {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+
 .c-h-size {
     font-size: 4.2rem;
     color: $color-white;
