@@ -100,6 +100,7 @@
         "_components.stats.scss",
         "_components.user-popup.scss",
         "_components.tabel.scss",
+        "_components.gebruikersbeheer.scss",
         "_components.content.scss",
         "_components.headnav.scss",
         "_bootstrap.override.scss"

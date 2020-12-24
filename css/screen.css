@@ -10483,6 +10483,116 @@ nav {
   border: 0.2rem solid white;
 }
 
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.c-mvtop10 {
+  margin-top: 23rem;
+  width: 100%;
+  height: auto;
+}
+
+.c-mvtop10__img {
+  width: 30rem;
+  height: auto;
+}
+
+.c-mvtop10__h {
+  color: white;
+  font-size: 2rem;
+}
+
+.c-mvtop10__h--smal {
+  color: #e9e9e9;
+  font-size: 1.6rem;
+  height: 3rem;
+}
+
+.c-mvtop10__text {
+  color: #00ade7;
+  font-size: 1.6rem;
+}
+
+.c-mvtop10__achtergrond {
+  background-color: #1a232e;
+  padding: 2rem;
+}
+
+.c-mvtop10__button {
+  margin-top: 6rem !important;
+}
+
+.c-mvtop10__add--text {
+  font-size: 2.4rem;
+  color: white;
+}
+
+.c-mvtop10__add--textsm {
+  font-size: 1.8rem;
+  color: #00ade7;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  border: 0;
+  background-color: #1a232e;
+  border-radius: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.c-form__movie--file {
+  padding-top: 4% !important;
+}
+
+.c-add__new--list {
+  margin-top: 3rem;
+}
+
+.c-form__select--addmv {
+  font-size: 3rem;
+  background-color: #0f171e;
+  width: 100%;
+  height: 6.5rem;
+  color: #00ade7;
+  border-radius: 0;
+  border: 0;
+  text-align: center;
+
 @media (max-width: 1860px) and (min-width: 1090px) {
   .c-table-td {
     font-size: 1.6rem;
@@ -10504,6 +10614,7 @@ nav {
 main {
   overflow-x: hidden;
   overflow-y: hidden;
+
 }
 
 .c-btn-text {
