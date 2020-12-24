@@ -10704,6 +10704,11 @@ main {
   margin-bottom: 3.4rem;
 }
 
+.c-form1-titel {
+  font-size: 40px;
+  text-align: center;
+}
+
 .c-h-size {
   font-size: 4.2rem;
   color: white;
@@ -10779,6 +10784,10 @@ main {
   height: 10rem;
   background-color: #0f171e;
   color: #00a8e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
 .c-form__button2 {
@@ -10788,6 +10797,45 @@ main {
   color: #0f171e;
   text-align: center;
   align-items: center;
+}
+
+.c-spacing {
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .c-spacing {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: 50px;
+  }
+}
+
+.c-margin {
+  margin-bottom: 81px;
+}
+
+.c-form__button2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.c-form-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 0;
+}
+
+.c-form-content p {
+  margin: 0;
+}
+
+.c-form-svg {
+  width: 52.664px;
+  height: 36.865px;
 }
 
 .c-form__button--submit {
@@ -11267,6 +11315,9 @@ main {
   .c-buttons-sm {
     display: flex;
     margin-top: 16rem;
+    text-align: center;
+    justify-content: center;
+    place-content: center;
   }
 }
 
