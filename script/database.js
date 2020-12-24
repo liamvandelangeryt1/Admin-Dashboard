@@ -28,7 +28,7 @@ const laadJsonData = function() {
 
   const verwerkenUsers = function(jsonObject) {
     const objects = jsonObject.users;
-console.log(objects)
+    console.log(objects)
 
 
     let html_screen = "";
@@ -59,7 +59,7 @@ console.log(objects)
  
         
         html_screen += `
-        <tr id= "filter" class="c-table-row">
+        <tr id= "filter" class="c-table-row c-table-row__reeks">
         <td class="c-table-td">${id}</th>
         <td class="c-table-td">${firstName} ${lastName}</th>
         <td class="c-table-td">${email}</th>
@@ -80,7 +80,112 @@ console.log(objects)
   };
 
 
-  
+  const verwerkUser = function(jsonObject) {
+    const objects = jsonObject.users;
+    console.log(objects)
+
+const id= object.id;
+const firstName =object.firstName;
+const lastName = object.lastName;
+const userName = object.username;
+const email = object.email;
+const status = object.status;
+const viewTime = object.viewTime;
+const adress = object.address;
+const birthday = object.dateOfBirth;
+const phoneNumber = object.phoneNumber[1].number;
+
+    let html_screen = "";
+        
+    html_screen += `
+
+    <form class="row c-form js-form" id="js-needsValidation">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="c-form__group">
+                      <input type="number" name="id" id="id" class="form-control form-control-lg c-form__input" placeholder="${id}" min="0" required />
+                      <label class="c-form__label" for="naam"> Id </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input type="text" name="name" id="name" class="form-control form-control-lg c-form__input" placeholder="${firstName} + ${lastName}" minlength="2" required />
+                      <label class="c-form__label" for="naam"> Name </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input type="text" name="username" id="usernaam" class="form-control form-control-lg c-form__input" placeholder="${userName}" minlength="2" required />
+                      <label class="c-form__label" for="naam"> UserName </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input type="date" id="date" name="date" class="form-control form-control-lg c-form__input" placeholder="${birthday}" required />
+                      <label class="c-form__label" for="date">date of birth</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input type="text" id="adress" name="adress" class="form-control form-control-lg c-form__input" required placeholder="${adress.street} ${adress.houseNumber} " />
+                      <label class="c-form__label" for="adress"> Adress </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input type="number" name="zipcode" id="zipcode" class="form-control form-control-lg c-form__input" min="1000" max="9999" placeholder="${adress.zipCode}" required />
+                      <label class="c-form__label" for="zipcode"> zipcode </label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group c-form__group">
+                      <input type="email" name="city" id="city" class="form-control form-control-lg c-form__input" placeholder="${adress.zipCity}" required />
+                      <label class="c-form__label" for="city"> city </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input
+                        type="tel"
+                        id="gsm"
+                        name="phonenum"
+                        pattern="((^[+\s0-9]{2,6}[\s\./0-
+                                        9]*$))"
+                        class="form-control form-control-lg c-form__input"
+                        placeholder="${phoneNumber}"
+                      />
+                      <label class="c-form__label" for="gsm"> Phone number </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group c-form__group">
+                      <input type="email" id="email" name="email" class="form-control form-control-lg c-form__input" placeholder="${email}" />
+                      <label class="c-form__label" for="email"> Email </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="o-button o-button--submit mt-3" id="js-button-submit">Update user information</button>
+              </form>
+  `;
+
+
+    
+    
+    document.querySelector(".js-form").innerHTML = html_screen;
+
+
+  };
+
+
 
 
   document.addEventListener('DOMContentLoaded', function() {

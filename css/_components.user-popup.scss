@@ -9,22 +9,47 @@
   height: 42rem;
   background-color: $color-aside;
   border-radius: $border-radius;
-  z-index: 1;
+  z-index: 4000;
 
   padding: 4.8rem;
+
+  @include media-breakpoint-down(md) {
+    left: 5rem;
+
+    height: 50rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 60rem;
+    height: 50rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
 
   &__content {
     height: 100%;
   }
 
-  &__close{
-    color: #00A8E1;
+  &__close {
+    color: #00a8e1;
     z-index: 11;
     position: relative;
     left: 19rem;
     font-size: 32px;
     top: -5rem;
     cursor: pointer;
+
+    @include media-breakpoint-down(sm) {
+      top: -7rem;
+      left: 12rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      left: 12rem;
+      top: -16rem;
+    }
   }
 
   &__avatar {
@@ -60,6 +85,18 @@
     color: $color-aside;
     background-color: $color-light-blue;
     font-weight: $font-medium;
+
+    @include media-breakpoint-down(md) {
+      width: 35rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 24.3rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 12rem;
+    }
   }
 
   &__input {
@@ -73,12 +110,20 @@
     -moz-box-shadow: none;
     box-shadow: none;
 
+    @include media-breakpoint-down(md) {
+      width: 104%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 103%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 118%;
+    }
+
     &::placeholder {
       color: $color-light-blue;
     }
   }
-
-  // &__button{
-  //   mar
-  // }
 }

@@ -1,210 +1,617 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/screen.css" />
   </head>
   <body>
     <header class="c-headnav">
-        <h1>Content</h1>
-        <div class="container ">
-          <div class="row justify-content-end">
-              <button class="col-lg-2 mr-4">
-                  <svg   x="0px" y="0px"
-                  viewBox="0 0 22 22"   class="c-icon-header">
-             <path id="Path_1373"  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
-                  M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
-                 "/>
-             <path id="Path_1374"  d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6
-                 c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z"/>
-             <path id="Path_1375" d="M17.3,5.8h2.2V8h2.2v2.2h-2.2v2.2h-2.2v-2.2h-2.2V8h2.2V5.8z"/>
-             </svg>
-             <a>FILTERS</a>
-                  
-              </button>
-              <button class="col-lg-2 mr-4">
-  
-                  <svg  x="0px" y="0px"
-       viewBox="0 0 22 22"  class="c-icon-header">
-  
-  <path id="Path_1373" class="st0" d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
-       M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
-      "/>
-  <path id="Path_1378"  d="M21.7,11.4h-5.3v1.8h5.3V11.4z"/>
-  <path id="Path_1379"  d="M16.3,15.8h5.3v1.8h-5.3V15.8z"/>
-  <path id="Path_1380"  d="M21.7,7.1h-5.3v1.8h5.3V7.1z"/>
-  <path id="Path_1381"  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
-       M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
-      "/>
-  <path id="Path_1382"  d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6
-      c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z"/>
-  </svg><a>SERIES</a>
-                  
-              </button>
-              <button class="col-lg-2 mr-4">
-                  <svg  x="0px" y="0px"
-       viewBox="0 0 22 22" class="c-icon-header" >
-  
-  <path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z"/>
-  <path id="Path_521" class="st1" d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
-      C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
-      z"/>
-  </svg>
-  <a>MOVIES</a>
-                 
-              </button>
-              <button class="col-lg-2 mr-4">
-                <svg  x="0px" y="0px"
-     viewBox="0 0 22 22" class="c-icon-header" >
+      <h1>Content</h1>
+      <div class="c-headnav--logo">
+        <img class="img-fluid" src="img/logo/prime video.png" />
+      </div>
+      <div class="c-headnav__bars">
+        <input type="checkbox" class="c-headnav__toggle" />
+        <span class="c-headnav__bar c-headnav__bar--1"></span>
+        <span class="c-headnav__bar c-headnav__bar--2"></span>
+        <span class="c-headnav__bar c-headnav__bar--3"></span>
 
-<path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z"/>
-<path id="Path_521" class="st1" d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
-    C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
-    z"/>
-</svg>
-<a>RENEW</a>
-               
-            </button>
-              
-  
-          </div></div>
-  
-      
-        </header>
-      <nav class="c-sidenav">
-          <div class="c-logo"><img class="img-fluid" src="img/logo/prime video.png"></div>
+        <div class="c-hamburgernav">
           <ul>
-              <li  class="">
-                  <img src="img/icons/dashboard-solid.svg" class="c-icon img-fluid">
-                      <a class="" href="index.html"> DASHBOARD</a>
-           
-              </li>
-              <li  class="">
-                  <img src="img/icons/id-card-solid.svg" class="c-icon img-fluid"><a href="user-managment.html"> USERS</a>
-                 
-                  </li>
-              <li id="active" class="">
-                  <img src="img/icons/film-solid.svg" class="c-icon img-fluid">
+            <li class="">
+              <img src="img/icons/dashboard-solid.svg" class="c-icon img-fluid" />
+              <a class="" href="index.html"> DASHBOARD</a>
+            </li>
+            <li class="">
+              <img src="img/icons/id-card-solid.svg" class="c-icon img-fluid" />
+              <a href="user-managment.html"> USERS</a>
+            </li>
+            <li id="active" class="">
+              <img src="img/icons/film-solid.svg" class="c-icon img-fluid" />
               <a href="content.html">CONTENT</a>
-              </li>
-              <li class="">
-                  <img src="img/icons/money-check-alt-solid.svg" class="c-icon img-fluid">
-              REVENUE
-              </li>
-              <li class="">
-                  <img src="img/icons/chart-line-solid.svg" class="c-icon img-fluid"> STATISTICS
-             
-              </li>
-          
+            </li>
+            <li class="">
+              <img src="img/icons/settings.svg" class="c-icon img-fluid" />
+              <a href="settings.html">SETTINGS</a>
+            </li>
+            <li class="">
+              <img src="img/icons/start-screen.svg" class="c-icon img-fluid" />
+              <a href="startscherm-beheer.html">STARTSCREEN</a>
+            </li>
+            <li class="">
+              <img src="img/icons/money-check-alt-solid.svg" class="c-icon img-fluid" />
+              <a href="#">REVENUE</a>
+            </li>
           </ul>
           <div class="c-admin">
-          <img src="img/user/user_profile_picture.jpg" class="img-fluid c-admin-img">
+            <img src="img/user/user_profile_picture.jpg" style="margin-left: 9rem" class="img-fluid c-admin-img" />
+            <h5>Bob Dien</h5>
+            <div>
+              <h6>Administrator</h6>
+              <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon" id="btn-user-popup">
+                <g transform="translate(8 12) rotate(90)">
+                  <path d="M1-2l-4-6l-4,6H1z" />
+                </g>
+              </svg>
+            </div>
+            <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon-logout">
+              <path
+                id="sign-out-alt-solid"
+                d="M21.4,11.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0c-0.2-0.2-0.3-0.4-0.3-0.7v-4.1H6.7
+                c-0.6,0-1-0.5-1-1c0,0,0,0,0,0V9c0-0.6,0.5-1,1-1c0,0,0,0,0,0h5.8V3.9c0-0.6,0.5-1,1-1c0.3,0,0.5,0.1,0.7,0.3l7.1,7.1
+                C21.8,10.7,21.8,11.3,21.4,11.7z M8.4,18.7V17c0-0.3-0.2-0.5-0.5-0.5H4.4c-0.8,0-1.4-0.6-1.4-1.4c0,0,0,0,0,0V6.9
+                c0-0.8,0.6-1.4,1.4-1.4c0,0,0,0,0,0h3.6c0.3,0,0.5-0.2,0.5-0.5V3.3c0-0.3-0.2-0.5-0.5-0.5H4.4c-2.3,0-4.1,1.8-4.1,4.1v8.2
+                c0,2.3,1.8,4.1,4.1,4.1h3.6C8.2,19.2,8.4,18.9,8.4,18.7z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-headnav--buttons container">
+        <div class="row justify-content-end">
+          <button class="col-lg-3 col-xl-3 mr-4">
+            <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+              <path
+                id="Path_1373"
+                class="st0"
+                d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+   M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+  "
+              />
+              <path id="Path_1378" d="M21.7,11.4h-5.3v1.8h5.3V11.4z" />
+              <path id="Path_1379" d="M16.3,15.8h5.3v1.8h-5.3V15.8z" />
+              <path id="Path_1380" d="M21.7,7.1h-5.3v1.8h5.3V7.1z" />
+              <path
+                id="Path_1381"
+                d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+   M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+  "
+              />
+              <path id="Path_1382" d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z" />
+            </svg>
+            <a href="serie-form.html">ADD SERIES</a>
+          </button>
+          <button class="col-lg-3 col-xl-3 mr-4">
+            <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+              <path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z" />
+              <path
+                id="Path_521"
+                class="st1"
+                d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
+  C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
+  z"
+              />
+            </svg>
+            <a href="movie-form.html">ADD MOVIES</a>
+          </button>
+          <button class="col-lg-2 col-xl-2 mr-4">
+            <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+              <path
+                id="Path_1373"
+                d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+              M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+             "
+              />
+              <path
+                id="Path_1374"
+                d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6
+             c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z"
+              />
+              <path id="Path_1375" d="M17.3,5.8h2.2V8h2.2v2.2h-2.2v2.2h-2.2v-2.2h-2.2V8h2.2V5.8z" />
+            </svg>
+            <a>FILTERS</a>
+          </button>
+          <button class="col-lg-2 col-xl-2 mr-4">
+            <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+              <path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z" />
+              <path
+                id="Path_521"
+                class="st1"
+                d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
+  C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
+  z"
+              />
+            </svg>
+            <a>RENEW</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="c-sidenav">
+      <div class="c-logo"><img class="img-fluid" src="img/logo/prime video.png" /></div>
+      <ul>
+        <li class="">
+          <img src="img/icons/dashboard-solid.svg" class="c-icon img-fluid" />
+          <a class="" href="index.html"> DASHBOARD</a>
+        </li>
+        <li class="">
+          <img src="img/icons/id-card-solid.svg" class="c-icon img-fluid" />
+          <a href="user-managment.html"> USERS</a>
+        </li>
+        <li id="active" class="">
+          <img src="img/icons/film-solid.svg" class="c-icon img-fluid" />
+          <a href="content.html">CONTENT</a>
+        </li>
+        <li class="">
+          <img src="img/icons/settings.svg" class="c-icon img-fluid" />
+          <a href="settings.html">SETTINGS</a>
+        </li>
+        <li class="">
+          <img src="img/icons/start-screen.svg" class="c-icon img-fluid" />
+          <a href="startscherm-beheer.html">STARTSCREEN</a>
+        </li>
+        <li class="">
+          <img src="img/icons/money-check-alt-solid.svg" class="c-icon img-fluid" />
+          <a href="#">REVENUE</a>
+        </li>
+      </ul>
+      <div class="c-admin">
+        <img src="img/user/user_profile_picture.jpg" class="img-fluid c-admin-img" />
         <h5>Bob Dien</h5>
-        <div><h6>Administrator</h6><svg x="0px" y="0px"
-          viewBox="0 0 22 22" class="c-admin-icon" id="btn-user-popup">
-  
-       <g  transform="translate(8 12) rotate(90)">
-         <path   d="M1-2l-4-6l-4,6H1z"/>
-       </g>
-       </svg></div>
-       <svg x="0px" y="0px"
-       viewBox="0 0 22 22"  class="c-admin-icon-logout">
-    
-    <path id="sign-out-alt-solid" d="M21.4,11.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0c-0.2-0.2-0.3-0.4-0.3-0.7v-4.1H6.7
-      c-0.6,0-1-0.5-1-1c0,0,0,0,0,0V9c0-0.6,0.5-1,1-1c0,0,0,0,0,0h5.8V3.9c0-0.6,0.5-1,1-1c0.3,0,0.5,0.1,0.7,0.3l7.1,7.1
-      C21.8,10.7,21.8,11.3,21.4,11.7z M8.4,18.7V17c0-0.3-0.2-0.5-0.5-0.5H4.4c-0.8,0-1.4-0.6-1.4-1.4c0,0,0,0,0,0V6.9
-      c0-0.8,0.6-1.4,1.4-1.4c0,0,0,0,0,0h3.6c0.3,0,0.5-0.2,0.5-0.5V3.3c0-0.3-0.2-0.5-0.5-0.5H4.4c-2.3,0-4.1,1.8-4.1,4.1v8.2
-      c0,2.3,1.8,4.1,4.1,4.1h3.6C8.2,19.2,8.4,18.9,8.4,18.7z"/>
-    </svg>
-    </div>
-  </nav>
+        <div>
+          <h6>Administrator</h6>
+          <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon" id="btn-user-popup">
+            <g transform="translate(8 12) rotate(90)">
+              <path d="M1-2l-4-6l-4,6H1z" />
+            </g>
+          </svg>
+        </div>
+        <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon-logout">
+          <path
+            id="sign-out-alt-solid"
+            d="M21.4,11.7l-7.1,7.1c-0.4,0.4-1,0.4-1.4,0c-0.2-0.2-0.3-0.4-0.3-0.7v-4.1H6.7
+                c-0.6,0-1-0.5-1-1c0,0,0,0,0,0V9c0-0.6,0.5-1,1-1c0,0,0,0,0,0h5.8V3.9c0-0.6,0.5-1,1-1c0.3,0,0.5,0.1,0.7,0.3l7.1,7.1
+                C21.8,10.7,21.8,11.3,21.4,11.7z M8.4,18.7V17c0-0.3-0.2-0.5-0.5-0.5H4.4c-0.8,0-1.4-0.6-1.4-1.4c0,0,0,0,0,0V6.9
+                c0-0.8,0.6-1.4,1.4-1.4c0,0,0,0,0,0h3.6c0.3,0,0.5-0.2,0.5-0.5V3.3c0-0.3-0.2-0.5-0.5-0.5H4.4c-2.3,0-4.1,1.8-4.1,4.1v8.2
+                c0,2.3,1.8,4.1,4.1,4.1h3.6C8.2,19.2,8.4,18.9,8.4,18.7z"
+          />
+        </svg>
+      </div>
+    </nav>
     <main class="">
-           <div class="c-custom-rows">
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/jk.png" alt="">
-                <!-- <div class="c-icon">
-                    <img class="c-icon-1" src="img/conte-pagina-gf/icons/edit-solid.svg" alt="">
-                    <img class="c-icon-2" src="img/conte-pagina-gf/icons/trash-alt-solid.svg" alt="">
-                </div>  -->
-                <h4 class="c-content-titel">The joker</h4>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/avengers.png" alt="">
-                <h4 class="c-content-titel">The Avengers</h4>
-                <h7>Infinity War</h7>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/bad-boys.png" alt="">
-                <h4 class="c-content-titel">Bad Boys</h4>
-                <h7>For Life</h7>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/box-jackryanshadowrecruit.png" alt="">
-                <h4 class="c-content-titel">Jack Ryan</h4>
-                <h7>Shadow Recruit</h7>
-            </div>
+      <div class="row">
+        <div class="c-buttons-sm">
+          <div class="row" style="place-content: center">
+            <button class="col-xs-8 col-sm-8 col-md-5">
+              <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+                <path
+                  id="Path_1373"
+                  class="st0"
+                  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+           M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+          "
+                />
+                <path id="Path_1378" d="M21.7,11.4h-5.3v1.8h5.3V11.4z" />
+                <path id="Path_1379" d="M16.3,15.8h5.3v1.8h-5.3V15.8z" />
+                <path id="Path_1380" d="M21.7,7.1h-5.3v1.8h5.3V7.1z" />
+                <path
+                  id="Path_1381"
+                  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+           M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+          "
+                />
+                <path id="Path_1382" d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z" />
+              </svg>
+              <a href="serie-form.html">ADD SERIES</a>
+            </button>
+            <button class="col-xs-8 col-sm-8 col-md-5">
+              <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+                <path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z" />
+                <path
+                  id="Path_521"
+                  class="st1"
+                  d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
+          C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
+          z"
+                />
+              </svg>
+              <a href="movie-form.html">ADD MOVIES</a>
+            </button>
+          </div>
+          <div class="row" style="place-content: center">
+            <button class="col-xs-8 col-sm-8 col-md-5">
+              <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+                <path
+                  id="Path_1373"
+                  d="M6.9,10.4c2.4,0,4.4-2,4.4-4.4s-2-4.4-4.4-4.4S2.5,3.6,2.5,6l0,0C2.5,8.4,4.5,10.4,6.9,10.4z
+                      M6.9,8.2c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2C4.7,7.2,5.7,8.2,6.9,8.2C6.9,8.2,6.9,8.2,6.9,8.2L6.9,8.2z
+                     "
+                />
+                <path
+                  id="Path_1374"
+                  d="M10.2,13.1c0.6,0,1.1,0.5,1.1,1.1v6.6h2.2v-6.6c0-1.8-1.5-3.3-3.3-3.3H3.6
+                     c-1.8,0-3.3,1.5-3.3,3.3v6.6h2.2v-6.6c0-0.6,0.5-1.1,1.1-1.1H10.2z"
+                />
+                <path id="Path_1375" d="M17.3,5.8h2.2V8h2.2v2.2h-2.2v2.2h-2.2v-2.2h-2.2V8h2.2V5.8z" />
+              </svg>
+              <a>FILTERS</a>
+            </button>
+            <button class="col-xs-8 col-sm-8 col-md-5">
+              <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-icon-header">
+                <path id="Path_520" class="st0" d="M13,11c0,1.1-0.9,1.9-1.9,1.9S9.1,12.1,9.1,11s0.9-1.9,1.9-1.9l0,0C12.1,9.1,13,9.9,13,11z" />
+                <path
+                  id="Path_521"
+                  class="st1"
+                  d="M11,2.5C5.8,2.5,1.3,6,0.1,11c1.6,6,7.7,9.7,13.8,8.1c4-1,7.1-4.1,8.1-8.1
+          C20.7,6,16.2,2.5,11,2.5z M14.8,11c0,2.1-1.7,3.8-3.8,3.8c-2.1,0-3.8-1.7-3.8-3.8S8.9,7.2,11,7.2C13.1,7.2,14.8,8.9,14.8,11L14.8,11
+          z"
+                />
+              </svg>
+              <a>RENEW</a>
+            </button>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/hobs&shaw.png" alt="">
-                <h4 class="c-content-titel">Fast & Furious</h4>
-                <h7>Hobs & Shaw</h7>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/james-bond.png" alt="">
-                <h4 class="c-content-titel">James Bond</h4>
-                <h7>No Time To Die</h7>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/lion-king.png" alt="">
-                <h4 class="c-content-titel">The Lion King</h4>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/man-from.png" alt="">
-                <h4 class="c-content-titel">The Man From</h4>
-                <h7>U.N.C.L.E</h7>
-            </div>
+      <div class="c-custom-rows">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/jk.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">The joker</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/avengers.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">The Avengers</h4>
+          <h7>Infinity War</h7>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/bad-boys.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Bad Boys</h4>
+          <h7>For Life</h7>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/box-jackryanshadowrecruit.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Jack Ryan</h4>
+          <h7>Shadow Recruit</h7>
+        </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/Men-In-Black-International.png" alt="">
-                <h4 class="c-content-titel">MIB</h4>
-                <h7>International</h7>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/hobs&shaw.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+       L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+       c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+       h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+       c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Fast & Furious</h4>
+          <h7>Hobs & Shaw</h7>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/james-bond.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">James Bond</h4>
+          <h7>No Time To Die</h7>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/lion-king.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">The Lion King</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/man-from.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">The Man From</h4>
+          <h7>U.N.C.L.E</h7>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/Men-In-Black-International.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">MIB</h4>
+          <h7>International</h7>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/mission_impossible__fallout.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Mission Impossible</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/jl.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Justice Leauge</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
+          <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/pirates-off-the-caraiben.png" alt="" />
+          <div class="c-icon">
+            <svg class="c-icon-1" version="1.1" id="Layer_1" focusable="false" x="0px" y="0px" viewBox="0 0 576 512" style="enable-background: new 0 0 576 512">
+              <path
+                d="M402.6,83.2l90.2,90.2c3.8,3.8,3.8,10,0,13.8L274.4,405.6l-92.8,10.3c-12.4,1.4-22.9-9.1-21.5-21.5l10.3-92.8
+                   L388.8,83.2C392.6,79.4,398.8,79.4,402.6,83.2L402.6,83.2z M564.6,60.3l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2,0l-35.4,35.4
+                   c-3.8,3.8-3.8,10,0,13.8l90.2,90.2c3.8,3.8,10,3.8,13.8,0l35.4-35.4C579.8,100.2,579.8,75.5,564.6,60.3z M384,346.2V448H64V128
+                   h229.8c3.2,0,6.2-1.3,8.5-3.5l40-40c7.6-7.6,2.2-20.5-8.5-20.5H48C21.5,64,0,85.5,0,112v352c0,26.5,21.5,48,48,48h352
+                   c26.5,0,48-21.5,48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40,40C385.3,340,384,343,384,346.2z"
+              />
+            </svg>
+            <svg class="c-icon-2" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background: new 0 0 448 512" xml:space="preserve">
+              <path
+                d="M32,464c0,26.5,21.5,48,48,48l0,0h288c26.5,0,48-21.5,48-48l0,0V128H32V464z M304,208c0-8.8,7.2-16,16-16
+	s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M208,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16
+	s-16-7.2-16-16V208z M112,208c0-8.8,7.2-16,16-16s16,7.2,16,16v224c0,8.8-7.2,16-16,16s-16-7.2-16-16V208z M432,32H312l-9.4-18.7
+	C298.5,5.1,290.2,0,281.1,0H166.8c-9.1,0-17.4,5.1-21.4,13.3L136,32H16C7.2,32,0,39.2,0,48v32c0,8.8,7.2,16,16,16h416
+	c8.8,0,16-7.2,16-16V48C448,39.2,440.8,32,432,32z"
+              />
+            </svg>
+          </div>
+          <h4 class="c-content-titel">Pirates Off The Caraiben</h4>
+          <h7>Dead Men Tell No Tales</h7>
+        </div>
+      </div>
+      <div class="c-custom-rows2">
+        <div class="row">
+          <div class="c-pagination">
+            <div aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#"><i class="fas fa-play c-rotade"></i></a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#"><i class="fas fa-play"></i></a>
+                </li>
+              </ul>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/mission_impossible__fallout.png" alt="">
-                <h4 class="c-content-titel">Mission Impossible</h4>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/jl.png" alt="">
-                <h4 class="c-content-titel">Justice Leauge</h4>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center c-movie-item">
-                <img class="img-fluid c-seriefilm" src="img/conte-pagina-gf/pirates-off-the-caraiben.png" alt="">
-                <h4 class="c-content-titel">Pirates Off The Caraiben</h4>
-                <h7>Dead Men Tell No Tales</h7>
-            </div>
-           </div>
-           <div class="c-custom-rows2">
-               <div class="row">
-                <div class="c-pagination">
-                    <div aria-label="Page navigation example">
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-play c-rotade"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-play"></i></a></li>
-                        </ul>
-                    </div>
-                   </div>
-               </div>
-           </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
