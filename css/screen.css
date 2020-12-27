@@ -12796,4 +12796,16 @@ main {
   text-align: center;
   color: black;
 }
+
+.control-label {
+  font-size: 1.8rem;
+}
+
+.form-control {
+  font-size: 1.5rem;
+}
+
+.form-control option {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=screen.css.map */
