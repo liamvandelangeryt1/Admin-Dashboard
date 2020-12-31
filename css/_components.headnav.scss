@@ -19,6 +19,11 @@
 
   a {
     padding-left: 1rem;
+    text-decoration: none;
+
+    a:hover {
+      color: inherit !important;
+    }
 
     @include media-breakpoint-down(xl) {
       padding-left: 1rem;

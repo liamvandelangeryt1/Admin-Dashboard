@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   z-index: 10;
-  top: 62rem;
+  top: 43rem;
   left: 26rem;
 
   width: 80rem;
@@ -15,7 +15,7 @@
 
   @include media-breakpoint-down(md) {
     left: 5rem;
-
+    top: 30% !important;
     height: 50rem;
   }
 
