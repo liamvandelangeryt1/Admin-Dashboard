@@ -19,11 +19,6 @@
 
   a {
     padding-left: 1rem;
-    text-decoration: none;
-
-    a:hover {
-      color: inherit !important;
-    }
 
     @include media-breakpoint-down(xl) {
       padding-left: 1rem;
@@ -150,9 +145,20 @@
     @include media-breakpoint-down(md) {
       display: none;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+    button:hover {
+      .c-icon-header,
+      a {
+        fill: $color-aside;
+        color: $color-aside;
+      }
+    }
   }
 }
-
 .c-hamburgernav {
   display: none;
   background-color: $color-aside;
@@ -242,5 +248,17 @@
     display: block;
     text-align: center;
     justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button:hover {
+    .c-icon-header,
+    a {
+      fill: $color-aside;
+      color: $color-aside;
+    }
   }
 }

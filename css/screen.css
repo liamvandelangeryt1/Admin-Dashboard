@@ -10994,7 +10994,7 @@ a {
 
 a :hover {
   text-decoration: none;
-  color: inherit;
+  color: #1a232e;
 }
 
 h1 {
@@ -12156,6 +12156,7 @@ main {
   border-radius: 0;
 }
 
+
 @media only screen and (max-width: 1260px) {
   .c-form-input {
     width: 32.6rem;
@@ -12167,6 +12168,7 @@ main {
     width: 100%;
   }
 }
+
 
 .c-form-input::-webkit-input-placeholder {
   color: #00ade7;
@@ -12668,13 +12670,8 @@ main {
 
 .c-headnav a {
   padding-left: 1rem;
-  text-decoration: none;
   padding-left: 1rem;
   font-size: 1.4rem !important;
-}
-
-.c-headnav a a:hover {
-  color: inherit !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -12835,6 +12832,16 @@ main {
   }
 }
 
+.c-headnav--buttons a {
+  text-decoration: none;
+}
+
+.c-headnav--buttons button:hover .c-icon-header,
+.c-headnav--buttons button:hover a {
+  fill: #1a232e;
+  color: #1a232e;
+}
+
 .c-hamburgernav {
   display: none;
   background-color: #1a232e;
@@ -12950,6 +12957,16 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.c-buttons-sm a {
+  text-decoration: none;
+}
+
+.c-buttons-sm button:hover .c-icon-header,
+.c-buttons-sm button:hover a {
+  fill: #1a232e;
+  color: #1a232e;
 }
 
 .card {
