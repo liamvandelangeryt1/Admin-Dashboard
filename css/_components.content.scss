@@ -11,6 +11,7 @@
 .c-seriefilm {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
 
 .c-movie-item {
@@ -30,6 +31,25 @@
         background-color: rgba($color-bg, $alpha: 0.75);
         width: 100%;
         height: 75%;
+        @media (min-width: 400px) {
+          height:85%;
+        }
+        @media (min-width: 768px) {
+          height: 80%;
+          }
+          
+          @media (min-width: 992px) {
+         height: 70%;
+          }
+          
+          @media (min-width: 1200px) {
+         height: 80%;
+          }
+
+   
+    
+
+        
 
         &-1 {
             fill: seagreen;
