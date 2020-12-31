@@ -200,27 +200,44 @@
           </div>
         </div>
       </div>
-      <!-- <div class="c-form-container c-form">
-    <h3 class="c-h-size col-12">Add new movie</h3>
-    <form action="POST">
-        <div class=" c-form-position">
-            <div>
-                <input class="form-control form-control-lg c-form-input" type="text" name="title" id="title" placeholder="Title *" minlength="1" required>
-                <label for="title">Title</label>
-            </div>
-            <div>
-                <input class="form-control form-control-lg c-form-input" type="text" name="info" id="info" placeholder="Info *" minlength="2" required>
-                <label for="info">Info</label>
-            </div>
-        </div>
-        <div class=" c-form-position">
-            <div>
-                <input class="form-control form-control-lg c-form-input" type="text" name="actors" id="Actors" placeholder="actors *" minlength="2" required>
-                <label for="actors">Actors</label>
-            </div>
-            <div>
-                <select class="custom-select c-form-select" id="mySelect" onchange="myFunction()">
-                    <option selected>Genres</option>
+      <section class="col-12">
+        <div class="container c-form__margin-top">
+          <div class="c-form2">
+            <form class="c-form1-padding">
+              <h2 class="col-12 c-h-size">Add New Movie</h2>
+              <div class="row c-form__extrm">
+                <div class="col-xl-6 col-lg-12 col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control c-form1-margin c-form-input"
+                    placeholder="Title*"
+                    required
+                  />
+                </div>
+                <div class="col-xl-6 col-lg-12 col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control c-form1-margin c-form-input"
+                    placeholder="Info*"
+                    required
+                  />
+                </div>
+                <div class="col-xl-6 col-lg-12 col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control c-form1-margin c-form-input"
+                    placeholder="Actors*"
+                    required
+                  />
+                </div>
+                <div class="col-xl-6 col-lg-12 col-sm-12">
+                  <select
+                    class="custom-select c-form1-margin c-form-select"
+                    id="mySelect"
+                    onchange="myFunction()"
+                    required
+                  >
+                    <option selected>Genres*</option>
                     <option value="1">Action</option>
                     <option value="2">Fantasie</option>
                     <option value="3">Horror</option>
@@ -228,23 +245,97 @@
                     <option value="5">Horror</option>
                     <option value="6">Romantic</option>
                   </select>
-            </div>
+                </div>
+                <div class="col-12">
+                  <select
+                    class="custom-select c-form1-margin c-form-select-long"
+                    id="mySelect"
+                    onchange="myFunction()"
+                    required
+                  >
+                    <option selected>Language*</option>
+                    <option value="1">Englisch</option>
+                    <option value="2">France</option>
+                    <option value="3">Chinees</option>
+                    <option value="4">German</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Dutch</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <select
+                    class="custom-select c-form1-margin c-form-select-long"
+                    id="mySelect"
+                    onchange="myFunction()"
+                    required
+                  >
+                    <option selected>Subtitles*</option>
+                    <option value="1">Englisch</option>
+                    <option value="2">France</option>
+                    <option value="3">Chinees</option>
+                    <option value="4">German</option>
+                    <option value="5">Italian</option>
+                    <option value="6">Dutch</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="c-form__textarea"
+                    id="discription"
+                    name="discription"
+                  >
+Discription</textarea
+                  >
+                  <label for="discription">Discription*</label>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex c-margin flex-wrap">
+                  <div class="col-lg-6 c-spacing d-flex justify-content-start c-sapcing">
+                    <div class="c-form__button c-form1-titel">
+                      Add new image
+                    </div>
+                  </div>
+                  <div class="col-lg-6 c-spacing d-flex justify-content-end c-spacing">
+                    <div class="c-form__button2">
+                      <svg class="c-form-svg" viewBox="0 0 52.664 36.865">
+                        <path
+                          id="cloud-upload-alt-solid"
+                          d="M44.238,48.013a7.909,7.909,0,0,0-7.373-10.747A7.859,7.859,0,0,0,32.479,38.6,13.167,13.167,0,0,0,7.9,45.166c0,.222.008.444.016.667a11.853,11.853,0,0,0,3.933,23.032H42.131a10.532,10.532,0,0,0,2.107-20.852ZM32.372,53.066H26.99v9.216A1.32,1.32,0,0,1,25.674,63.6h-3.95a1.32,1.32,0,0,1-1.317-1.317V53.066H15.026a1.314,1.314,0,0,1-.93-2.246l8.673-8.673a1.321,1.321,0,0,1,1.86,0L33.3,50.819a1.316,1.316,0,0,1-.93,2.246Z"
+                          transform="translate(0 -32)"
+                          fill="#0f171e"
+                        />
+                      </svg>
+
+                      <div class="c-form-content">
+                        <p>Open/drop picture’s</p>
+                        <p>Or</p>
+                        <p>browse file</p>
+                      </div>
+
+                      <svg class="c-form-svg" viewBox="0 0 52.664 36.865">
+                        <path
+                          id="cloud-upload-alt-solid"
+                          d="M44.238,48.013a7.909,7.909,0,0,0-7.373-10.747A7.859,7.859,0,0,0,32.479,38.6,13.167,13.167,0,0,0,7.9,45.166c0,.222.008.444.016.667a11.853,11.853,0,0,0,3.933,23.032H42.131a10.532,10.532,0,0,0,2.107-20.852ZM32.372,53.066H26.99v9.216A1.32,1.32,0,0,1,25.674,63.6h-3.95a1.32,1.32,0,0,1-1.317-1.317V53.066H15.026a1.314,1.314,0,0,1-.93-2.246l8.673-8.673a1.321,1.321,0,0,1,1.86,0L33.3,50.819a1.316,1.316,0,0,1-.93,2.246Z"
+                          transform="translate(0 -32)"
+                          fill="#0f171e"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 d-flex justify-content-center">
+                  <button class="c-form__button--submit" type="submit">
+                    Submit
+                  </button>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div>
-            <input class="form-control form-control-lg c-form-input_long" type="text" name="languages" id="languages" placeholder="Languages *" minlength="2" required>
-            <label for="languages">Languages</label>
-        </div>
-        <div>
-            <input class="form-control form-control-lg c-form-input_long" type="text" name="subitels" id="subitels" placeholder="Subitels *" minlength="2" required>
-            <label for="subitels">Subitels</label>
-        </div>
-        <div>
-            <textarea name="description" id="description" cols="30" rows="10">
-                Description
-            </textarea>
-        </div>
-    </form>
-</div> -->
+      </section>
     </main>
     <div id="j-user-popup" class="c-user-popup">
        
