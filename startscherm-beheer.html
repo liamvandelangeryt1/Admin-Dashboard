@@ -169,7 +169,7 @@
         <h5>Bob Dien</h5>
         <div>
           <h6>Administrator</h6>
-          <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon" id="btn-user-popup">
+          <svg x="0px" y="0px" viewBox="0 0 22 22" class="c-admin-icon" id="btn-user-popup2">
             <g transform="translate(8 12) rotate(90)">
               <path d="M1-2l-4-6l-4,6H1z" />
             </g>
@@ -543,6 +543,86 @@
         </div>
       </section>
     </main>
+    <div id="j-user-popup" class="c-user-popup">
+       
+      <div class="row">
+        <div class="col-6">
+            <!-- je kan het hier dynamisch maken -->
+            <h5 class="c-user-popup__name">Bob Dien</h5>
+            <h6 class="c-user-popup__function">Administrator</h6>
+        </div>
+        <!-- HIER MOET AFBEELDING-->
+        <div class="col-6 ">
+            <img
+            class="c-user-popup__avatar"
+            src="../Admin-Dashboard/img/user/user_profile_picture.jpg"
+            alt="Picture of user"
+          />
+         <span class="c-user-popup__close">&times;</span>
+        </div>
+      </div>
+      <div class="row c-user-popup__info">
+        <div class="col-6">
+          <div class="c-user-popup__element">
+            <label class="c-user-popup__label" for="c_username"
+              >Username</label
+            ><input
+              class="c-user-popup__input"
+              type="text"
+              id="c_username"
+              name="c_username"
+              placeholder="Username"
+              disabled
+            />
+          </div>
+          <div class="c-user-popup__element">
+            <label class="c-user-popup__label" for="c_password"
+              >Password</label
+            ><input
+              class="c-user-popup__input"
+              type="text"
+              id="c_password"
+              name="c_password"
+              placeholder="*********"
+              disabled
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="c-user-popup__element">
+            <label class="c-user-popup__label" for="c_email">E-mail</label
+            ><input
+              class="c-user-popup__input"
+              type="text"
+              id="c_email"
+              name="c_email"
+              placeholder="Bob_Dien@outlook.com"
+              disabled
+            />
+          </div>
+          <div class="c-user-popup__element">
+            <label class="c-user-popup__label" for="c_accounttype">Type</label
+            ><input
+              class="c-user-popup__input"
+              type="text"
+              id="c_accounttype"
+              name="c_accounttype"
+              placeholder="Administrator"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <button class="col-4">
+        <a>MAKE ACCOUNT</a>
+        <button class="col-3">
+        <a>EDIT</a>
+        <button class="col-3">
+        <a>LOG OUT</a>
+      </button>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -550,5 +630,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/374c0650f6.js" crossorigin="anonymous"></script>
     <script src="script/form.js"></script>
+    <script src="script/modal.js"></script>
   </body>
 </html>

@@ -11444,7 +11444,7 @@ nav {
   display: none;
   position: fixed;
   z-index: 10;
-  top: 62rem;
+  top: 43rem;
   left: 26rem;
   width: 80rem;
   height: 42rem;
@@ -11457,6 +11457,7 @@ nav {
 @media (max-width: 991.98px) {
   .c-user-popup {
     left: 5rem;
+    top: 30% !important;
     height: 50rem;
   }
 }
@@ -12513,8 +12514,13 @@ main {
 
 .c-headnav a {
   padding-left: 1rem;
+  text-decoration: none;
   padding-left: 1rem;
   font-size: 1.4rem !important;
+}
+
+.c-headnav a a:hover {
+  color: inherit !important;
 }
 
 @media (max-width: 1199.98px) {
