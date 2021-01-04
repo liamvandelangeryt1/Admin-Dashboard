@@ -83,6 +83,10 @@
 
 .c-content-titel {
     margin-top: -10px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 2rem;
+    }
 }
 
 .page-link {
@@ -178,7 +182,11 @@
 */
 
 .form-control {
-    font-size: 3rem !important;
+    font-size: 3rem;
+}
+
+.c-controle__heigt {
+    padding: 7.5px;
 }
 
 .c-form__extrm {
