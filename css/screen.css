@@ -11913,6 +11913,7 @@ main {
 .c-seriefilm {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 .c-movie-item {
@@ -11933,6 +11934,30 @@ main {
   background-color: rgba(15, 23, 30, 0.75);
   width: 100%;
   height: 75%;
+}
+
+@media (min-width: 400px) {
+  .c-movie-item:hover .c-icon {
+    height: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-movie-item:hover .c-icon {
+    height: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-movie-item:hover .c-icon {
+    height: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-movie-item:hover .c-icon {
+    height: 80%;
+  }
 }
 
 .c-movie-item:hover .c-icon-1 {
@@ -12171,11 +12196,7 @@ main {
   border-radius: 0;
 }
 
-@media only screen and (max-width: 1260px) {
-  .c-form-input {
-    width: 32.6rem;
-  }
-}
+
 
 @media only screen and (max-width: 1200px) {
   .c-form-input {
