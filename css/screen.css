@@ -11895,6 +11895,11 @@ main {
   text-align: center;
 }
 
+.c-form__file--height {
+  height: auto !important;
+  font-size: 1.5rem !important;
+}
+
 .c-btn-text {
   font-size: 2.4rem;
   color: #00a8e1;
@@ -11996,6 +12001,12 @@ main {
   margin-top: -10px;
 }
 
+@media (max-width: 1199.98px) {
+  .c-content-titel {
+    font-size: 2rem;
+  }
+}
+
 .page-link {
   color: #00a8e1;
   background-color: #0f171e;
@@ -12088,7 +12099,11 @@ main {
 }
 */
 .form-control {
-  font-size: 3rem !important;
+  font-size: 3rem;
+}
+
+.c-controle__heigt {
+  padding: 7.5px;
 }
 
 .c-form__extrm {
@@ -12156,7 +12171,6 @@ main {
   border-radius: 0;
 }
 
-
 @media only screen and (max-width: 1260px) {
   .c-form-input {
     width: 32.6rem;
@@ -12168,7 +12182,6 @@ main {
     width: 100%;
   }
 }
-
 
 .c-form-input::-webkit-input-placeholder {
   color: #00ade7;
