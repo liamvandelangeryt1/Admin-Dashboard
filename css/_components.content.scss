@@ -103,6 +103,10 @@
 
 .c-content-titel {
     margin-top: -10px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 2rem;
+    }
 }
 
 .page-link {
@@ -195,14 +199,47 @@
 .form-control-lg {
     border-radius: 0;
 }
+*/
 
 .form-control {
-    border: 0;
+    font-size: 3rem;
 }
-*/
+
+.c-controle__heigt {
+    padding: 7.5px;
+}
+
+.c-form__extrm {
+    margin-bottom: 0.4rem;
+}
+
 .c-form1 {
     max-width: 95.1rem;
     min-height: 134.2rem;
+    background-color: $color-aside;
+    border-radius: 1.6rem;
+
+    &-padding {
+        padding: 6.5rem;
+    }
+
+    &-margin {
+        margin-bottom: 2.7rem;
+    }
+
+    &-titel {
+        font-size: 40px;
+        text-align: center;
+
+        @media only screen and (max-width: 1260px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.c-form2 {
+    max-width: 95.1rem;
+    min-height: 11.8rem;
     background-color: $color-aside;
     border-radius: 1.6rem;
 
@@ -223,6 +260,7 @@
 .c-h-size {
     font-size: 4.2rem;
     color: $color-white;
+    margin-bottom: 5rem;
 }
 
 .c-form-input {
@@ -232,6 +270,14 @@
     height: 6.5rem;
     border: 0;
     border-radius: 0;
+
+    @media only screen and (max-width: 1260px) {
+        width: 32.6rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+    }
 
     &::placeholder {
         color: $color-aside-normal;
@@ -257,6 +303,14 @@
     color: $color-aside-normal;
     border-radius: 0;
     border: 0;
+
+    @media only screen and (max-width: 1260px) {
+        width: 32.6rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+    }
 
     &-long {
         font-size: 3rem;
@@ -314,10 +368,18 @@
 .c-spacing {
     padding: 0;
 
+    @media only screen and (max-width: 1260px) {
+        padding: 15px;
+    }
+
     @include media-breakpoint-down(md) {
         display: flex !important;
         justify-content: flex-start !important;
         margin-top: 50px;
+    }
+
+    @media only screen and (max-width: 994px) {
+        justify-content: center !important;
     }
 }
 
@@ -337,6 +399,10 @@
     flex-direction: column;
     font-size: 20px;
     padding: 0;
+
+    @media only screen and (max-width: 1220px) {
+        font-size: 14px;
+    }
 
     p {
         margin: 0;
@@ -362,7 +428,24 @@
 
 .c-form__margin-top {
     margin-top: 22rem;
+    margin-left: 28%;
+
+    @media only screen and (max-width: 1600px) {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    @media only screen and (max-width: 1260px) {
+        width: 70%;
+        margin-left: 23%;
+    }
+
+    @media only screen and (max-width: 994px) {
+        width: 100%;
+        margin-left: auto;
+    }
 }
+
 
 /*user managment detail*/
 

@@ -10994,7 +10994,7 @@ a {
 
 a :hover {
   text-decoration: none;
-  color: inherit;
+  color: #1a232e;
 }
 
 h1 {
@@ -11895,6 +11895,11 @@ main {
   text-align: center;
 }
 
+.c-form__file--height {
+  height: auto !important;
+  font-size: 1.5rem !important;
+}
+
 .c-btn-text {
   font-size: 2.4rem;
   color: #00a8e1;
@@ -12021,6 +12026,12 @@ main {
   margin-top: -10px;
 }
 
+@media (max-width: 1199.98px) {
+  .c-content-titel {
+    font-size: 2rem;
+  }
+}
+
 .page-link {
   color: #00a8e1;
   background-color: #0f171e;
@@ -12111,11 +12122,19 @@ main {
 .form-control-lg {
     border-radius: 0;
 }
-
-.form-control {
-    border: 0;
-}
 */
+.form-control {
+  font-size: 3rem;
+}
+
+.c-controle__heigt {
+  padding: 7.5px;
+}
+
+.c-form__extrm {
+  margin-bottom: 0.4rem;
+}
+
 .c-form1 {
   max-width: 95.1rem;
   min-height: 134.2rem;
@@ -12128,7 +12147,7 @@ main {
 }
 
 .c-form1-margin {
-  margin-bottom: 3.4rem;
+  margin-bottom: 2.7rem;
 }
 
 .c-form1-titel {
@@ -12136,9 +12155,36 @@ main {
   text-align: center;
 }
 
+@media only screen and (max-width: 1260px) {
+  .c-form1-titel {
+    font-size: 20px;
+  }
+}
+
+.c-form2 {
+  max-width: 95.1rem;
+  min-height: 11.8rem;
+  background-color: #1a232e;
+  border-radius: 1.6rem;
+}
+
+.c-form2-padding {
+  padding: 6.5rem;
+}
+
+.c-form2-margin {
+  margin-bottom: 3.4rem;
+}
+
+.c-form2-titel {
+  font-size: 40px;
+  text-align: center;
+}
+
 .c-h-size {
   font-size: 4.2rem;
   color: white;
+  margin-bottom: 5rem;
 }
 
 .c-form-input {
@@ -12148,6 +12194,14 @@ main {
   height: 6.5rem;
   border: 0;
   border-radius: 0;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .c-form-input {
+    width: 100%;
+  }
 }
 
 .c-form-input::-webkit-input-placeholder {
@@ -12197,6 +12251,18 @@ main {
   color: #00ade7;
   border-radius: 0;
   border: 0;
+}
+
+@media only screen and (max-width: 1260px) {
+  .c-form-select {
+    width: 32.6rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .c-form-select {
+    width: 100%;
+  }
 }
 
 .c-form-select-long {
@@ -12262,6 +12328,12 @@ main {
   padding: 0;
 }
 
+@media only screen and (max-width: 1260px) {
+  .c-spacing {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .c-spacing {
     display: -webkit-box !important;
@@ -12271,6 +12343,14 @@ main {
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .c-spacing {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
@@ -12303,6 +12383,12 @@ main {
   padding: 0;
 }
 
+@media only screen and (max-width: 1220px) {
+  .c-form-content {
+    font-size: 14px;
+  }
+}
+
 .c-form-content p {
   margin: 0;
 }
@@ -12326,6 +12412,28 @@ main {
 
 .c-form__margin-top {
   margin-top: 22rem;
+  margin-left: 28%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .c-form__margin-top {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .c-form__margin-top {
+    width: 70%;
+    margin-left: 23%;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .c-form__margin-top {
+    width: 100%;
+    margin-left: auto;
+  }
 }
 
 /*user managment detail*/
@@ -12596,13 +12704,8 @@ main {
 
 .c-headnav a {
   padding-left: 1rem;
-  text-decoration: none;
   padding-left: 1rem;
   font-size: 1.4rem !important;
-}
-
-.c-headnav a a:hover {
-  color: inherit !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -12763,6 +12866,16 @@ main {
   }
 }
 
+.c-headnav--buttons a {
+  text-decoration: none;
+}
+
+.c-headnav--buttons button:hover .c-icon-header,
+.c-headnav--buttons button:hover a {
+  fill: #1a232e;
+  color: #1a232e;
+}
+
 .c-hamburgernav {
   display: none;
   background-color: #1a232e;
@@ -12878,6 +12991,16 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.c-buttons-sm a {
+  text-decoration: none;
+}
+
+.c-buttons-sm button:hover .c-icon-header,
+.c-buttons-sm button:hover a {
+  fill: #1a232e;
+  color: #1a232e;
 }
 
 .card {
